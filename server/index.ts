@@ -27,7 +27,7 @@ export function createServer() {
   app.get("/api/demo", handleDemo);
 
   // Catch-all route - serve index.html for all non-API routes (SPA routing)
-  app.get("*", (_req, res) => {
+  app.get(/.*/, (_req, res) => {
     res.sendFile(path.join(__dirname, "../dist/spa/index.html"));
   });
 
