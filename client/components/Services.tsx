@@ -1,40 +1,46 @@
 export default function Services() {
   const services = [
     {
-      icon: "🎨",
-      title: "UI/UX Design",
+      icon: "🛍️",
+      title: "Ecommerce",
       description:
-        "Beautiful, intuitive interfaces designed with your users in mind. We create experiences that delight.",
+        "Powerful online stores that convert browsers into buyers. Seamless shopping experiences with secure payments and inventory management.",
     },
     {
-      icon: "⚡",
-      title: "Web Development",
+      icon: "🏨",
+      title: "Hospitality",
       description:
-        "Fast, responsive, and scalable web applications built with modern technologies and best practices.",
+        "Booking systems and guest experiences that drive revenue. From resorts to boutique hotels, we deliver digital solutions that welcome guests.",
     },
     {
-      icon: "📱",
-      title: "Mobile Apps",
+      icon: "✈️",
+      title: "Travel",
       description:
-        "Native and cross-platform mobile applications that engage users and drive business growth.",
-    },
-    {
-      icon: "🔍",
-      title: "Brand Strategy",
-      description:
-        "Comprehensive brand development from concept to execution. We help you stand out in the market.",
-    },
-    {
-      icon: "📊",
-      title: "Analytics & Growth",
-      description:
-        "Data-driven strategies to measure, optimize, and scale your digital presence effectively.",
+        "Inspire wanderlust and simplify journeys. Dynamic booking platforms and immersive experiences for travel companies worldwide.",
     },
     {
       icon: "🤝",
-      title: "Consulting",
+      title: "B2B",
       description:
-        "Expert guidance on digital transformation, technology selection, and strategic planning.",
+        "Complex solutions for business relationships. Streamlined operations, partner portals, and enterprise integrations that scale.",
+    },
+    {
+      icon: "💼",
+      title: "Financial & Professional",
+      description:
+        "Secure, compliant digital solutions for finance and professional services. Build trust through elegant, regulated platforms.",
+    },
+    {
+      icon: "🚀",
+      title: "SaaS",
+      description:
+        "Subscription platforms built for growth. User-centric interfaces, analytics, and scalable infrastructure for modern SaaS companies.",
+    },
+    {
+      icon: "💳",
+      title: "Fintech",
+      description:
+        "Innovative financial technology that disrupts the industry. Payment systems, lending platforms, and digital wallets reimagined.",
     },
   ];
 
