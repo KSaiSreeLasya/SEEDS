@@ -50,11 +50,11 @@ export default function Services() {
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16 md:mb-24 animate-slide-up">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
-            Our Services
+            Industry Solutions
           </h2>
           <p className="text-lg text-muted-foreground">
-            We offer a comprehensive range of services to help your business
-            thrive in the digital world.
+            Specialized digital solutions for the industries that matter. We bring
+            deep expertise and innovative thinking to your sector.
           </p>
         </div>
 
