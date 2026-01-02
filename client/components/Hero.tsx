@@ -15,8 +15,8 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl opacity-90 max-w-lg leading-relaxed">
-              We create beautiful, functional digital experiences that help brands
-              grow and connect with their audience in meaningful ways.
+              We create beautiful, functional digital experiences that help
+              brands grow and connect with their audience in meaningful ways.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -30,11 +30,15 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-6 pt-4 text-sm opacity-80">
               <div>
-                <p className="font-heading font-bold text-lg text-accent">150+</p>
+                <p className="font-heading font-bold text-lg text-accent">
+                  150+
+                </p>
                 <p>Projects Completed</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-lg text-accent">98%</p>
+                <p className="font-heading font-bold text-lg text-accent">
+                  98%
+                </p>
                 <p>Client Satisfaction</p>
               </div>
               <div>
@@ -45,7 +49,10 @@ export default function Hero() {
           </div>
 
           {/* Visual */}
-          <div className="relative h-96 md:h-full min-h-96 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+          <div
+            className="relative h-96 md:h-full min-h-96 animate-slide-up"
+            style={{ animationDelay: "0.1s" }}
+          >
             <div className="absolute inset-0 bg-gradient-to-br from-accent to-transparent rounded-3xl opacity-20"></div>
             <div className="absolute inset-0 rounded-3xl overflow-hidden">
               <div className="absolute top-10 right-10 w-32 h-32 bg-accent rounded-full opacity-20 animate-pulse"></div>

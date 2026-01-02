@@ -11,8 +11,7 @@ export default function About() {
     },
     {
       title: "Innovation Driven",
-      description:
-        "We stay ahead of trends and use cutting-edge technologies.",
+      description: "We stay ahead of trends and use cutting-edge technologies.",
     },
     {
       title: "Collaborative",
@@ -21,7 +20,10 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-24 lg:py-32 bg-primary text-primary-foreground">
+    <section
+      id="about"
+      className="py-16 md:py-24 lg:py-32 bg-primary text-primary-foreground"
+    >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
@@ -45,15 +47,21 @@ export default function About() {
 
             <div className="flex flex-col sm:flex-row gap-6 pt-4 text-sm">
               <div>
-                <p className="font-heading font-bold text-3xl text-accent">50+</p>
+                <p className="font-heading font-bold text-3xl text-accent">
+                  50+
+                </p>
                 <p className="opacity-80">Team Members</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-3xl text-accent">12</p>
+                <p className="font-heading font-bold text-3xl text-accent">
+                  12
+                </p>
                 <p className="opacity-80">Awards Won</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-3xl text-accent">40+</p>
+                <p className="font-heading font-bold text-3xl text-accent">
+                  40+
+                </p>
                 <p className="opacity-80">Global Clients</p>
               </div>
             </div>

@@ -11,7 +11,9 @@ export default function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-primary font-bold text-lg font-heading">S</span>
+                <span className="text-primary font-bold text-lg font-heading">
+                  S
+                </span>
               </div>
               <span className="font-heading font-bold text-lg">Seed</span>
             </Link>
@@ -27,17 +29,26 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/" className="opacity-80 hover:opacity-100 transition-opacity">
+                <Link
+                  to="/"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <a href="#services" className="opacity-80 hover:opacity-100 transition-opacity">
+                <a
+                  href="#services"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a href="#about" className="opacity-80 hover:opacity-100 transition-opacity">
+                <a
+                  href="#about"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
                   About
                 </a>
               </li>
@@ -51,17 +62,26 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
                   Documentation
                 </a>
               </li>
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
                   Support
                 </a>
               </li>
@@ -75,17 +95,26 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
                   Privacy
                 </a>
               </li>
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
                   Terms
                 </a>
               </li>
               <li>
-                <a href="#" className="opacity-80 hover:opacity-100 transition-opacity">
+                <a
+                  href="#"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
                   Cookie Policy
                 </a>
               </li>

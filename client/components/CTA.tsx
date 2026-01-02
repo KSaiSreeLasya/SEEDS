@@ -9,8 +9,8 @@ export default function CTA() {
               Ready to transform your digital presence?
             </h2>
             <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-8">
-              Let's work together to create something amazing. Get in touch today
-              and let's discuss your project.
+              Let's work together to create something amazing. Get in touch
+              today and let's discuss your project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-accent text-accent-foreground font-heading font-bold rounded-lg hover:opacity-90 transition-opacity text-lg">
@@ -34,20 +34,19 @@ export default function CTA() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              {[
-                "TechStart",
-                "Design Co",
-                "Growth Labs",
-                "Digital Hub",
-              ].map((company, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-center p-6 bg-muted rounded-xl border border-border hover:border-primary/30 transition-colors animate-slide-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <p className="font-semibold text-muted-foreground">{company}</p>
-                </div>
-              ))}
+              {["TechStart", "Design Co", "Growth Labs", "Digital Hub"].map(
+                (company, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-center p-6 bg-muted rounded-xl border border-border hover:border-primary/30 transition-colors animate-slide-up"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <p className="font-semibold text-muted-foreground">
+                      {company}
+                    </p>
+                  </div>
+                ),
+              )}
             </div>
           </div>
         </div>
