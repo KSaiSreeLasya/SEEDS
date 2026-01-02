@@ -72,13 +72,13 @@ export default function About() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="p-6 bg-accent bg-opacity-10 rounded-2xl border border-accent border-opacity-20 animate-slide-up"
+                className="p-6 bg-accent rounded-2xl border border-accent animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <h3 className="text-xl font-heading font-semibold text-accent mb-2">
+                <h3 className="text-xl font-heading font-semibold text-primary mb-2">
                   {value.title}
                 </h3>
-                <p className="opacity-80 text-sm leading-relaxed">
+                <p className="text-primary opacity-90 text-sm leading-relaxed">
                   {value.description}
                 </p>
               </div>
