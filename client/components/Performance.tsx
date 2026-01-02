@@ -3,22 +3,26 @@ export default function Performance() {
     {
       metric: "2.5x",
       label: "Average ROI Increase",
-      description: "Our data-driven strategies deliver measurable results that impact your bottom line.",
+      description:
+        "Our data-driven strategies deliver measurable results that impact your bottom line.",
     },
     {
       metric: "150+",
       label: "Campaigns Optimized",
-      description: "From PPC to content marketing, we've refined strategies across all digital channels.",
+      description:
+        "From PPC to content marketing, we've refined strategies across all digital channels.",
     },
     {
       metric: "98%",
       label: "Client Retention",
-      description: "We build partnerships that last, delivering consistent growth year after year.",
+      description:
+        "We build partnerships that last, delivering consistent growth year after year.",
     },
     {
       metric: "48h",
       label: "Campaign Launch Time",
-      description: "Our agile process gets your campaigns live faster without compromising quality.",
+      description:
+        "Our agile process gets your campaigns live faster without compromising quality.",
     },
   ];
 
@@ -29,8 +33,12 @@ export default function Performance() {
           {/* Content */}
           <div className="space-y-8 animate-slide-up">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary bg-opacity-10 rounded-full">
-              <span className="text-primary font-semibold text-sm">⚡ Performance</span>
-              <span className="text-sm text-primary opacity-80">Marketing Excellence</span>
+              <span className="text-primary font-semibold text-sm">
+                ⚡ Performance
+              </span>
+              <span className="text-sm text-primary opacity-80">
+                Marketing Excellence
+              </span>
             </div>
 
             <div>
@@ -38,14 +46,14 @@ export default function Performance() {
                 Performance Marketing Specialists
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                We don't believe in vanity metrics. Every strategy, every campaign,
-                and every tactic is laser-focused on driving measurable results for
-                your business.
+                We don't believe in vanity metrics. Every strategy, every
+                campaign, and every tactic is laser-focused on driving
+                measurable results for your business.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                From acquisition to retention, we optimize every touchpoint in your
-                customer journey to maximize revenue, reduce costs, and accelerate
-                growth.
+                From acquisition to retention, we optimize every touchpoint in
+                your customer journey to maximize revenue, reduce costs, and
+                accelerate growth.
               </p>
             </div>
 
@@ -137,7 +145,9 @@ export default function Performance() {
                 className="group p-6 md:p-8 bg-muted rounded-2xl border border-border hover:shadow-lg hover:border-primary transition-all duration-300 animate-slide-up flex gap-6"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex-shrink-0 text-4xl mt-1">{specialty.icon}</div>
+                <div className="flex-shrink-0 text-4xl mt-1">
+                  {specialty.icon}
+                </div>
                 <div className="flex-1 min-w-0">
                   <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-2">
                     {specialty.title}
