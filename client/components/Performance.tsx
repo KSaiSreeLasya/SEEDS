@@ -81,51 +81,88 @@ export default function Performance() {
           </div>
         </div>
 
-        {/* Performance Pillars */}
-        <div className="mt-16 md:mt-24">
-          <div className="text-center mb-16 animate-slide-up">
-            <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">
-              Our Performance Approach
+        {/* Performance Specialties */}
+        <div className="mt-16 md:mt-24 pt-16 md:pt-24 border-t border-border">
+          <div className="mb-12 animate-slide-up">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
+              Performance Specialists
             </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We combine strategy, technology, and continuous optimization to
-              deliver exceptional results.
+            <p className="text-lg text-muted-foreground max-w-2xl">
+              We're not everything to everyone. Instead, we deliver our core
+              specialities where we know we can have the biggest impact.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {[
               {
-                title: "Data-Driven Strategy",
+                title: "Organic Search",
                 description:
-                  "We start with deep analysis of your market, competitors, and audience to build strategies backed by data.",
-                icon: "📊",
+                  "Get found by your customers at the right time across search engines, marketplaces and app stores.",
+                icon: "🔍",
               },
               {
-                title: "Continuous Optimization",
+                title: "Paid Search",
                 description:
-                  "Every campaign is constantly tested, monitored, and refined. We improve results week over week.",
-                icon: "🔄",
+                  "We develop innovative media campaigns that drive qualified leads from search engines.",
+                icon: "🎯",
               },
               {
-                title: "Transparent Reporting",
+                title: "Social Media",
                 description:
-                  "You'll always know exactly how your budget is spent and what results it's delivering. Full transparency, always.",
-                icon: "📈",
+                  "We pair creativity with insight to deliver a data driven blend of awareness, engagement, and performance.",
+                icon: "📢",
               },
-            ].map((pillar, index) => (
+              {
+                title: "PR",
+                description:
+                  "Strategic brand positioning with search intelligence to build trust, boost brand visibility, and secure the right press coverage to grow your business.",
+                icon: "📣",
+              },
+              {
+                title: "Design",
+                description:
+                  "Where creativity and strategy combine to create innovative, impactful visuals that drive tangible, measurable results.",
+                icon: "🎨",
+              },
+              {
+                title: "International Expansion",
+                description:
+                  "Launch and scale your digital marketing into new markets with strategies tailored for global success and seamless localization.",
+                icon: "🌍",
+              },
+            ].map((specialty, index) => (
               <div
                 key={index}
-                className="p-8 bg-white border border-border rounded-2xl hover:shadow-lg transition-all duration-300 animate-slide-up"
+                className="group p-6 md:p-8 bg-muted rounded-2xl border border-border hover:shadow-lg hover:border-primary transition-all duration-300 animate-slide-up flex gap-6"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-4xl mb-4">{pillar.icon}</div>
-                <h4 className="text-xl font-heading font-semibold text-primary mb-3">
-                  {pillar.title}
-                </h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  {pillar.description}
-                </p>
+                <div className="flex-shrink-0 text-4xl mt-1">{specialty.icon}</div>
+                <div className="flex-1 min-w-0">
+                  <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-2">
+                    {specialty.title}
+                  </h4>
+                  <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                    {specialty.description}
+                  </p>
+                </div>
+                <div className="flex-shrink-0 flex items-start justify-end pt-1">
+                  <div className="w-8 h-8 rounded bg-accent flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <svg
+                      className="w-5 h-5 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
