@@ -122,39 +122,62 @@ export default function Services() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="group p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-border animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-heading font-semibold text-primary mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
-              <div className="mt-4 inline-flex items-center gap-2 text-primary font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                Learn more
-                <svg
-                  className="w-4 h-4 group-hover:translate-x-2 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+          {services.map((service, index) => {
+            const isExpanded = expandedServices[service.title];
+            return (
+              <div
+                key={index}
+                className="group p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-border animate-slide-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-primary mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {service.description}
+                </p>
+
+                {isExpanded && (
+                  <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
+                    <h4 className="font-semibold text-primary text-sm">Key Features:</h4>
+                    <ul className="space-y-2">
+                      {service.details.map((detail, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 mt-0.5">
+                            <span className="text-xs font-semibold text-primary">✓</span>
+                          </span>
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                <button
+                  onClick={() => toggleService(service.title)}
+                  className="mt-4 inline-flex items-center gap-2 text-primary font-semibold hover:opacity-70 transition-opacity cursor-pointer"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+                  {isExpanded ? 'Show less' : 'Learn more'}
+                  <svg
+                    className={`w-4 h-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
