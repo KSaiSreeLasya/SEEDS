@@ -114,73 +114,143 @@ export default function Performance() {
                 description:
                   "Get found by your customers at the right time across search engines, marketplaces and app stores.",
                 icon: "🔍",
+                details: [
+                  "Comprehensive keyword research and strategy",
+                  "On-page and technical SEO optimization",
+                  "Content creation and link building",
+                  "Local SEO and Google Business optimization",
+                  "Performance tracking and monthly reporting"
+                ]
               },
               {
                 title: "Paid Search",
                 description:
                   "We develop innovative media campaigns that drive qualified leads from search engines.",
                 icon: "🎯",
+                details: [
+                  "Google Ads account setup and optimization",
+                  "Keyword bidding strategy and budget allocation",
+                  "Ad copy testing and conversion rate optimization",
+                  "Landing page design and A/B testing",
+                  "ROAS tracking and performance analysis"
+                ]
               },
               {
                 title: "Social Media",
                 description:
                   "We pair creativity with insight to deliver a data driven blend of awareness, engagement, and performance.",
                 icon: "📢",
+                details: [
+                  "Social media strategy and content calendar",
+                  "Community management and engagement",
+                  "Paid social campaigns across all major platforms",
+                  "Influencer partnership identification",
+                  "Social listening and sentiment analysis"
+                ]
               },
               {
                 title: "PR",
                 description:
                   "Strategic brand positioning with search intelligence to build trust, boost brand visibility, and secure the right press coverage to grow your business.",
                 icon: "📣",
+                details: [
+                  "Media relations and press outreach",
+                  "Press release distribution and syndication",
+                  "Crisis communication management",
+                  "Brand reputation monitoring",
+                  "Media coverage tracking and analysis"
+                ]
               },
               {
                 title: "Design",
                 description:
                   "Where creativity and strategy combine to create innovative, impactful visuals that drive tangible, measurable results.",
                 icon: "🎨",
+                details: [
+                  "Brand identity and logo design",
+                  "UI/UX design for web and mobile",
+                  "Marketing collateral and advertising design",
+                  "Design system development",
+                  "Creative direction and art direction"
+                ]
               },
               {
                 title: "International Expansion",
                 description:
                   "Launch and scale your digital marketing into new markets with strategies tailored for global success and seamless localization.",
                 icon: "🌍",
+                details: [
+                  "Market research and localization strategy",
+                  "Multi-language campaign management",
+                  "Cultural adaptation and messaging",
+                  "Local partnership and vendor coordination",
+                  "Regional compliance and regulatory guidance"
+                ]
               },
-            ].map((specialty, index) => (
-              <div
-                key={index}
-                className="group p-6 md:p-8 bg-muted rounded-2xl border border-border hover:shadow-lg hover:border-primary transition-all duration-300 animate-slide-up flex gap-6"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex-shrink-0 text-4xl mt-1">
-                  {specialty.icon}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-2">
-                    {specialty.title}
-                  </h4>
-                  <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-                    {specialty.description}
-                  </p>
-                </div>
-                <div className="flex-shrink-0 flex items-start justify-end pt-1">
-                  <div className="w-8 h-8 rounded bg-accent flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <svg
-                      className="w-5 h-5 text-primary"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+            ].map((specialty, index) => {
+              const isExpanded = expandedSpecialists[specialty.title];
+              return (
+                <div
+                  key={index}
+                  className="p-6 md:p-8 bg-muted rounded-2xl border border-border hover:shadow-lg hover:border-primary transition-all duration-300 animate-slide-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="flex gap-6">
+                    <div className="flex-shrink-0 text-4xl mt-1">
+                      {specialty.icon}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-2">
+                        {specialty.title}
+                      </h4>
+                      <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+                        {specialty.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  {isExpanded && (
+                    <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
+                      <h5 className="font-semibold text-primary text-sm">Our Approach:</h5>
+                      <ul className="space-y-2">
+                        {specialty.details.map((detail, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 mt-0.5">
+                              <span className="text-xs font-semibold text-primary">•</span>
+                            </span>
+                            {detail}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  <div className="flex items-start justify-end pt-4">
+                    <button
+                      onClick={() => setExpandedSpecialists((prev) => ({
+                        ...prev,
+                        [specialty.title]: !prev[specialty.title],
+                      }))}
+                      className="w-8 h-8 rounded bg-accent flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 4v16m8-8H4"
-                      />
-                    </svg>
+                      <svg
+                        className={`w-5 h-5 text-primary transition-transform ${isExpanded ? 'rotate-45' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 4v16m8-8H4"
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
