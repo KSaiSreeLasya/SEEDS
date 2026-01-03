@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const handleGetStarted = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <nav className="container mx-auto px-4 py-4 lg:py-6">
