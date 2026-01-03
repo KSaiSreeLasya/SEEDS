@@ -62,6 +62,12 @@ export default function CTA() {
           </div>
         </div>
       </div>
+
+      <ContactForm
+        isOpen={openForm !== null}
+        onOpenChange={(open) => setOpenForm(open ? openForm : null)}
+        type={openForm || "project"}
+      />
     </section>
   );
 }
