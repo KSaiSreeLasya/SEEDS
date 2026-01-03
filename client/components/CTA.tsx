@@ -1,4 +1,9 @@
+import { useState } from "react";
+import ContactForm from "./ContactForm";
+
 export default function CTA() {
+  const [openForm, setOpenForm] = useState<"project" | "call" | null>(null);
+
   return (
     <section id="contact" className="py-16 md:py-24 lg:py-32 bg-white">
       <div className="container mx-auto px-4">
@@ -13,10 +18,16 @@ export default function CTA() {
               today and let's discuss your project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-accent text-accent-foreground font-heading font-bold rounded-lg hover:opacity-90 transition-opacity text-lg">
+              <button
+                onClick={() => setOpenForm("project")}
+                className="px-8 py-4 bg-accent text-accent-foreground font-heading font-bold rounded-lg hover:opacity-90 transition-opacity text-lg"
+              >
                 Start a Project
               </button>
-              <button className="px-8 py-4 border-2 border-accent bg-transparent text-accent font-heading font-bold rounded-lg hover:bg-accent hover:text-accent-foreground transition-all text-lg">
+              <button
+                onClick={() => setOpenForm("call")}
+                className="px-8 py-4 border-2 border-accent bg-transparent text-accent font-heading font-bold rounded-lg hover:bg-accent hover:text-accent-foreground transition-all text-lg"
+              >
                 Schedule a Call
               </button>
             </div>
