@@ -32,11 +32,11 @@ export default function Performance() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-8 animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary bg-opacity-10 rounded-full">
-              <span className="text-primary font-semibold text-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary rounded-full">
+              <span className="text-primary-foreground font-semibold text-sm">
                 ⚡ Performance
               </span>
-              <span className="text-sm text-primary opacity-80">
+              <span className="text-sm text-primary-foreground">
                 Marketing Excellence
               </span>
             </div>
