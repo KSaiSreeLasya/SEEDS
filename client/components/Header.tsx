@@ -124,7 +124,10 @@ export default function Header() {
               Contact
             </a>
             <button
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                handleGetStarted();
+                setIsMobileMenuOpen(false);
+              }}
               className="w-full px-4 py-2.5 bg-accent text-accent-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
             >
               Get Started
