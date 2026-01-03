@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const handleGetStarted = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <nav className="container mx-auto px-4 py-4 lg:py-6">
@@ -50,7 +54,10 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden sm:flex items-center gap-4">
-            <button className="px-6 py-2.5 bg-accent text-accent-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading">
+            <button
+              onClick={handleGetStarted}
+              className="px-6 py-2.5 bg-accent text-accent-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
+            >
               Get Started
             </button>
           </div>
@@ -117,7 +124,10 @@ export default function Header() {
               Contact
             </a>
             <button
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                handleGetStarted();
+                setIsMobileMenuOpen(false);
+              }}
               className="w-full px-4 py-2.5 bg-accent text-accent-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
             >
               Get Started
