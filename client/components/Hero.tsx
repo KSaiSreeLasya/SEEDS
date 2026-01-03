@@ -1,4 +1,12 @@
 export default function Hero() {
+  const handleGetStarted = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleLearnMore = () => {
+    document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="bg-primary text-primary-foreground py-16 md:py-24 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -24,10 +32,16 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="px-8 py-3 bg-accent text-accent-foreground font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center">
+              <button
+                onClick={handleGetStarted}
+                className="px-8 py-3 bg-accent text-accent-foreground font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center"
+              >
                 Get Started
               </button>
-              <button className="px-8 py-3 border-2 border-accent text-accent font-heading font-semibold rounded-lg hover:bg-accent hover:text-accent-foreground transition-all text-center">
+              <button
+                onClick={handleLearnMore}
+                className="px-8 py-3 border-2 border-accent text-accent font-heading font-semibold rounded-lg hover:bg-accent hover:text-accent-foreground transition-all text-center"
+              >
                 Learn More
               </button>
             </div>
