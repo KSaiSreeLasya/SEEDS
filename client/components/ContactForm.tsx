@@ -34,17 +34,13 @@ export default function ContactForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const isProjectForm = type === "project";
-  const title = isProjectForm
-    ? "Start a Project"
-    : "Schedule a Call";
+  const title = isProjectForm ? "Start a Project" : "Schedule a Call";
   const description = isProjectForm
     ? "Tell us about your project and let's discuss how we can help."
     : "Let's schedule a time to discuss your needs.";
 
   const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -64,7 +60,7 @@ export default function ContactForm({
       toast.success(
         isProjectForm
           ? "Project inquiry sent! We'll be in touch soon."
-          : "Call scheduled! We'll confirm the time shortly."
+          : "Call scheduled! We'll confirm the time shortly.",
       );
 
       setFormData({
@@ -184,11 +180,7 @@ export default function ContactForm({
             >
               Cancel
             </Button>
-            <Button
-              type="submit"
-              disabled={isSubmitting}
-              className="flex-1"
-            >
+            <Button type="submit" disabled={isSubmitting} className="flex-1">
               {isSubmitting ? "Submitting..." : "Submit"}
             </Button>
           </div>
