@@ -1,9 +1,11 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Performance() {
-  const [expandedSpecialists, setExpandedSpecialists] = useState<Record<string, boolean>>({});
+  const [expandedSpecialists, setExpandedSpecialists] = useState<
+    Record<string, boolean>
+  >({});
 
   const specialists = [
     {
@@ -119,8 +121,8 @@ export default function Performance() {
                   "On-page and technical SEO optimization",
                   "Content creation and link building",
                   "Local SEO and Google Business optimization",
-                  "Performance tracking and monthly reporting"
-                ]
+                  "Performance tracking and monthly reporting",
+                ],
               },
               {
                 title: "Paid Search",
@@ -132,8 +134,8 @@ export default function Performance() {
                   "Keyword bidding strategy and budget allocation",
                   "Ad copy testing and conversion rate optimization",
                   "Landing page design and A/B testing",
-                  "ROAS tracking and performance analysis"
-                ]
+                  "ROAS tracking and performance analysis",
+                ],
               },
               {
                 title: "Social Media",
@@ -145,8 +147,8 @@ export default function Performance() {
                   "Community management and engagement",
                   "Paid social campaigns across all major platforms",
                   "Influencer partnership identification",
-                  "Social listening and sentiment analysis"
-                ]
+                  "Social listening and sentiment analysis",
+                ],
               },
               {
                 title: "PR",
@@ -158,8 +160,8 @@ export default function Performance() {
                   "Press release distribution and syndication",
                   "Crisis communication management",
                   "Brand reputation monitoring",
-                  "Media coverage tracking and analysis"
-                ]
+                  "Media coverage tracking and analysis",
+                ],
               },
               {
                 title: "Design",
@@ -171,8 +173,8 @@ export default function Performance() {
                   "UI/UX design for web and mobile",
                   "Marketing collateral and advertising design",
                   "Design system development",
-                  "Creative direction and art direction"
-                ]
+                  "Creative direction and art direction",
+                ],
               },
               {
                 title: "International Expansion",
@@ -184,8 +186,8 @@ export default function Performance() {
                   "Multi-language campaign management",
                   "Cultural adaptation and messaging",
                   "Local partnership and vendor coordination",
-                  "Regional compliance and regulatory guidance"
-                ]
+                  "Regional compliance and regulatory guidance",
+                ],
               },
             ].map((specialty, index) => {
               const isExpanded = expandedSpecialists[specialty.title];
@@ -211,12 +213,19 @@ export default function Performance() {
 
                   {isExpanded && (
                     <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
-                      <h5 className="font-semibold text-primary text-sm">Our Approach:</h5>
+                      <h5 className="font-semibold text-primary text-sm">
+                        Our Approach:
+                      </h5>
                       <ul className="space-y-2">
                         {specialty.details.map((detail, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <li
+                            key={idx}
+                            className="flex items-start gap-2 text-sm text-muted-foreground"
+                          >
                             <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 mt-0.5">
-                              <span className="text-xs font-semibold text-primary">•</span>
+                              <span className="text-xs font-semibold text-primary">
+                                •
+                              </span>
                             </span>
                             {detail}
                           </li>
@@ -227,14 +236,16 @@ export default function Performance() {
 
                   <div className="flex items-start justify-end pt-4">
                     <button
-                      onClick={() => setExpandedSpecialists((prev) => ({
-                        ...prev,
-                        [specialty.title]: !prev[specialty.title],
-                      }))}
+                      onClick={() =>
+                        setExpandedSpecialists((prev) => ({
+                          ...prev,
+                          [specialty.title]: !prev[specialty.title],
+                        }))
+                      }
                       className="w-8 h-8 rounded bg-accent flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
                     >
                       <svg
-                        className={`w-5 h-5 text-primary transition-transform ${isExpanded ? 'rotate-45' : ''}`}
+                        className={`w-5 h-5 text-primary transition-transform ${isExpanded ? "rotate-45" : ""}`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

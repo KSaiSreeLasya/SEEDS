@@ -1,9 +1,11 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Services() {
-  const [expandedServices, setExpandedServices] = useState<Record<string, boolean>>({});
+  const [expandedServices, setExpandedServices] = useState<
+    Record<string, boolean>
+  >({});
 
   const services = [
     {
@@ -16,8 +18,8 @@ export default function Services() {
         "Advanced inventory management and real-time stock sync",
         "Conversion rate optimization and A/B testing",
         "Payment gateway integration with fraud protection",
-        "Customer analytics and behavior tracking"
-      ]
+        "Customer analytics and behavior tracking",
+      ],
     },
     {
       icon: "🏨",
@@ -29,8 +31,8 @@ export default function Services() {
         "Guest experience personalization and loyalty programs",
         "Channel manager integration for multi-property management",
         "In-room digital concierge services",
-        "Revenue management optimization tools"
-      ]
+        "Revenue management optimization tools",
+      ],
     },
     {
       icon: "✈️",
@@ -42,8 +44,8 @@ export default function Services() {
         "Real-time flight and hotel comparison engines",
         "Global distribution system integration",
         "Visa and documentation tracking",
-        "Travel insurance integration and claims management"
-      ]
+        "Travel insurance integration and claims management",
+      ],
     },
     {
       icon: "🤝",
@@ -55,8 +57,8 @@ export default function Services() {
         "B2B marketplace solutions with vendor management",
         "Supply chain visibility and tracking",
         "Quote and order management automation",
-        "Enterprise API integrations and data synchronization"
-      ]
+        "Enterprise API integrations and data synchronization",
+      ],
     },
     {
       icon: "💼",
@@ -68,8 +70,8 @@ export default function Services() {
         "Client portal with secure document sharing",
         "Portfolio management and reporting dashboards",
         "KYC/AML workflow automation",
-        "Audit trails and transaction monitoring"
-      ]
+        "Audit trails and transaction monitoring",
+      ],
     },
     {
       icon: "🚀",
@@ -81,8 +83,8 @@ export default function Services() {
         "Usage-based pricing and metering",
         "Customer onboarding and activation flows",
         "Advanced analytics and cohort analysis",
-        "API-first architecture for seamless integrations"
-      ]
+        "API-first architecture for seamless integrations",
+      ],
     },
     {
       icon: "💳",
@@ -94,8 +96,8 @@ export default function Services() {
         "Real-time payment processing and settlement",
         "Lending platform automation and credit decisioning",
         "Digital wallet and payment instrument management",
-        "Fraud detection and anti-money laundering systems"
-      ]
+        "Fraud detection and anti-money laundering systems",
+      ],
     },
   ];
 
@@ -115,8 +117,8 @@ export default function Services() {
             Industry Solutions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Specialized digital solutions for the industries that matter. We bring
-            deep expertise and innovative thinking to your sector.
+            Specialized digital solutions for the industries that matter. We
+            bring deep expertise and innovative thinking to your sector.
           </p>
         </div>
 
@@ -142,12 +144,19 @@ export default function Services() {
 
                 {isExpanded && (
                   <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
-                    <h4 className="font-semibold text-primary text-sm">Key Features:</h4>
+                    <h4 className="font-semibold text-primary text-sm">
+                      Key Features:
+                    </h4>
                     <ul className="space-y-2">
                       {service.details.map((detail, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <li
+                          key={idx}
+                          className="flex items-start gap-2 text-sm text-muted-foreground"
+                        >
                           <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 mt-0.5">
-                            <span className="text-xs font-semibold text-primary">✓</span>
+                            <span className="text-xs font-semibold text-primary">
+                              ✓
+                            </span>
                           </span>
                           {detail}
                         </li>
@@ -160,9 +169,9 @@ export default function Services() {
                   onClick={() => toggleService(service.title)}
                   className="mt-4 inline-flex items-center gap-2 text-primary font-semibold hover:opacity-70 transition-opacity cursor-pointer"
                 >
-                  {isExpanded ? 'Show less' : 'Learn more'}
+                  {isExpanded ? "Show less" : "Learn more"}
                   <svg
-                    className={`w-4 h-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 transition-transform ${isExpanded ? "rotate-180" : ""}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
