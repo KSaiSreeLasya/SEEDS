@@ -6,8 +6,12 @@ export default function Hero() {
           {/* Content */}
           <div className="space-y-6 animate-slide-up">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-accent rounded-full">
-              <span className="text-accent-foreground font-semibold text-sm">✨ New</span>
-              <span className="text-accent-foreground text-sm">Launching this season</span>
+              <span className="text-accent-foreground font-semibold text-sm">
+                ✨ New
+              </span>
+              <span className="text-accent-foreground text-sm">
+                Launching this season
+              </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight">
