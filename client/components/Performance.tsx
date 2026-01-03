@@ -1,4 +1,10 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function Performance() {
+  const [expandedSpecialists, setExpandedSpecialists] = useState<Record<string, boolean>>({});
+
   const specialists = [
     {
       metric: "2.5x",
