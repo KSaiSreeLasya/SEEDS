@@ -1,48 +1,110 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function Services() {
+  const [expandedServices, setExpandedServices] = useState<Record<string, boolean>>({});
+
   const services = [
     {
       icon: "🛍️",
       title: "Ecommerce",
       description:
         "Powerful online stores that convert browsers into buyers. Seamless shopping experiences with secure payments and inventory management.",
+      details: [
+        "Multi-channel sales integration across all major platforms",
+        "Advanced inventory management and real-time stock sync",
+        "Conversion rate optimization and A/B testing",
+        "Payment gateway integration with fraud protection",
+        "Customer analytics and behavior tracking"
+      ]
     },
     {
       icon: "🏨",
       title: "Hospitality",
       description:
         "Booking systems and guest experiences that drive revenue. From resorts to boutique hotels, we deliver digital solutions that welcome guests.",
+      details: [
+        "Reservation management systems with real-time availability",
+        "Guest experience personalization and loyalty programs",
+        "Channel manager integration for multi-property management",
+        "In-room digital concierge services",
+        "Revenue management optimization tools"
+      ]
     },
     {
       icon: "✈️",
       title: "Travel",
       description:
         "Inspire wanderlust and simplify journeys. Dynamic booking platforms and immersive experiences for travel companies worldwide.",
+      details: [
+        "Dynamic packaging and itinerary builders",
+        "Real-time flight and hotel comparison engines",
+        "Global distribution system integration",
+        "Visa and documentation tracking",
+        "Travel insurance integration and claims management"
+      ]
     },
     {
       icon: "🤝",
       title: "B2B",
       description:
         "Complex solutions for business relationships. Streamlined operations, partner portals, and enterprise integrations that scale.",
+      details: [
+        "Custom partner portal development",
+        "B2B marketplace solutions with vendor management",
+        "Supply chain visibility and tracking",
+        "Quote and order management automation",
+        "Enterprise API integrations and data synchronization"
+      ]
     },
     {
       icon: "💼",
       title: "Financial & Professional",
       description:
         "Secure, compliant digital solutions for finance and professional services. Build trust through elegant, regulated platforms.",
+      details: [
+        "Regulatory compliance management (GDPR, PCI-DSS, etc.)",
+        "Client portal with secure document sharing",
+        "Portfolio management and reporting dashboards",
+        "KYC/AML workflow automation",
+        "Audit trails and transaction monitoring"
+      ]
     },
     {
       icon: "🚀",
       title: "SaaS",
       description:
         "Subscription platforms built for growth. User-centric interfaces, analytics, and scalable infrastructure for modern SaaS companies.",
+      details: [
+        "Subscription billing and recurring payment management",
+        "Usage-based pricing and metering",
+        "Customer onboarding and activation flows",
+        "Advanced analytics and cohort analysis",
+        "API-first architecture for seamless integrations"
+      ]
     },
     {
       icon: "💳",
       title: "Fintech",
       description:
         "Innovative financial technology that disrupts the industry. Payment systems, lending platforms, and digital wallets reimagined.",
+      details: [
+        "Open banking API integration and financial data aggregation",
+        "Real-time payment processing and settlement",
+        "Lending platform automation and credit decisioning",
+        "Digital wallet and payment instrument management",
+        "Fraud detection and anti-money laundering systems"
+      ]
     },
   ];
+
+  const toggleService = (title: string) => {
+    setExpandedServices((prev) => ({
+      ...prev,
+      [title]: !prev[title],
+    }));
+  };
 
   return (
     <section id="services" className="py-16 md:py-24 lg:py-32 bg-muted">
