@@ -54,7 +54,10 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden sm:flex items-center gap-4">
-            <button className="px-6 py-2.5 bg-accent text-accent-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading">
+            <button
+              onClick={handleGetStarted}
+              className="px-6 py-2.5 bg-accent text-accent-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
+            >
               Get Started
             </button>
           </div>
