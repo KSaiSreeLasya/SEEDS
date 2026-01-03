@@ -5,9 +5,9 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-6 animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-accent bg-opacity-20 rounded-full">
-              <span className="text-accent font-semibold text-sm">✨ New</span>
-              <span className="text-sm opacity-90">Launching this season</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-accent rounded-full">
+              <span className="text-accent-foreground font-semibold text-sm">✨ New</span>
+              <span className="text-accent-foreground text-sm">Launching this season</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight">
