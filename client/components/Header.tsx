@@ -9,16 +9,16 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-border">
+    <header className="sticky top-0 z-50 bg-background border-b border-border">
       <nav className="container mx-auto px-4 py-4 lg:py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-white font-bold text-lg font-heading">
-                S
-              </span>
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F07ba826074254d3191a55ee32e800a58%2Fd104679854324d6f8666110eb8a61517?format=webp&width=800"
+              alt="Holographic Sphere Logo"
+              className="w-10 h-10 rounded-lg object-cover"
+            />
             <span className="font-heading font-bold text-xl text-primary hidden sm:block">
               Seed
             </span>
