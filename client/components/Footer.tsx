@@ -10,11 +10,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-primary font-bold text-lg font-heading">
-                  S
-                </span>
-              </div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F07ba826074254d3191a55ee32e800a58%2Fd104679854324d6f8666110eb8a61517?format=webp&width=800"
+                alt="Holographic Sphere Logo"
+                className="w-10 h-10 rounded-lg object-cover"
+              />
               <span className="font-heading font-bold text-lg">Seed</span>
             </Link>
             <p className="text-sm opacity-90">
