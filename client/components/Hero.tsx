@@ -68,16 +68,20 @@ export default function Hero() {
 
           {/* Visual */}
           <div
-            className="relative h-96 md:h-full min-h-96 animate-slide-up"
+            className="relative h-96 md:h-full min-h-96 animate-slide-up flex items-center justify-center"
             style={{ animationDelay: "0.1s" }}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-accent to-transparent rounded-3xl opacity-20"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-secondary to-transparent rounded-3xl opacity-20"></div>
             <div className="absolute inset-0 rounded-3xl overflow-hidden">
-              <div className="absolute top-10 right-10 w-32 h-32 bg-accent rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute top-10 right-10 w-32 h-32 bg-secondary rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute bottom-20 left-10 w-40 h-40 bg-accent rounded-full opacity-10 animate-pulse"></div>
               <div className="relative h-full flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-6xl mb-4">🌱</div>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F07ba826074254d3191a55ee32e800a58%2Fd104679854324d6f8666110eb8a61517?format=webp&width=800"
+                    alt="Holographic Sphere"
+                    className="w-64 h-64 object-contain mx-auto mb-4 drop-shadow-lg"
+                  />
                   <p className="font-heading font-bold text-2xl">Seed Studio</p>
                   <p className="opacity-70 mt-2">Design & Development</p>
                 </div>
