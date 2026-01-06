@@ -78,7 +78,7 @@ export default function Hero() {
               <div className="relative h-full flex items-center justify-center">
                 <div className="text-center">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F07ba826074254d3191a55ee32e800a58%2Fd104679854324d6f8666110eb8a61517?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F07ba826074254d3191a55ee32e800a58%2F9a5617e61447487cab49264f51c9bfde?format=webp&width=800"
                     alt="Holographic Sphere"
                     className="w-64 h-64 object-contain mx-auto mb-4 drop-shadow-lg"
                   />
