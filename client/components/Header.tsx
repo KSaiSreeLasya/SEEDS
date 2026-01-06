@@ -28,25 +28,25 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               to="/"
-              className="text-foreground font-medium hover:text-primary transition-colors"
+              className="text-foreground font-medium hover:text-secondary transition-colors"
             >
               Home
             </Link>
             <a
               href="#services"
-              className="text-foreground font-medium hover:text-primary transition-colors"
+              className="text-foreground font-medium hover:text-secondary transition-colors"
             >
               Services
             </a>
             <a
               href="#about"
-              className="text-foreground font-medium hover:text-primary transition-colors"
+              className="text-foreground font-medium hover:text-secondary transition-colors"
             >
               About
             </a>
             <a
               href="#contact"
-              className="text-foreground font-medium hover:text-primary transition-colors"
+              className="text-foreground font-medium hover:text-secondary transition-colors"
             >
               Contact
             </a>
