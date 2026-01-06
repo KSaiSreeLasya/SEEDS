@@ -97,28 +97,28 @@ export default function Header() {
           <div className="md:hidden mt-4 pb-4 space-y-3 animate-slide-up">
             <Link
               to="/"
-              className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+              className="block px-4 py-2 text-foreground hover:bg-muted hover:text-secondary rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </Link>
             <a
               href="#services"
-              className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+              className="block px-4 py-2 text-foreground hover:bg-muted hover:text-secondary rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Services
             </a>
             <a
               href="#about"
-              className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+              className="block px-4 py-2 text-foreground hover:bg-muted hover:text-secondary rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </a>
             <a
               href="#contact"
-              className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+              className="block px-4 py-2 text-foreground hover:bg-muted hover:text-secondary rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
@@ -128,7 +128,7 @@ export default function Header() {
                 handleGetStarted();
                 setIsMobileMenuOpen(false);
               }}
-              className="w-full px-4 py-2.5 bg-accent text-accent-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
+              className="w-full px-4 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
             >
               Get Started
             </button>
