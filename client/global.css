@@ -12,53 +12,52 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Brand Colors */
-    --teal-dark: 180 96% 16%;
-    --teal-medium: 180 95% 17%;
-    --teal-light: 180 40% 50%;
-    --lime: 64 100% 86%;
-    --beige: 45 74% 97%;
-    --neutral-dark: 0 0% 24%;
+    /* Holographic Vibe Brand Colors */
+    --magenta: 300 100% 50%;
+    --cyan: 180 100% 50%;
+    --dark-bg: 0 0% 10.2%;
+    --lavender: 300 34% 75%;
+    --white: 0 0% 100%;
 
-    /* Semantic Colors */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 24%;
+    /* Semantic Colors - Holographic Theme */
+    --background: 0 0% 10.2%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 24%;
+    --card: 300 20% 15%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 24%;
+    --popover: 300 20% 15%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 180 96% 16%;
+    --primary: 300 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 64 100% 86%;
-    --secondary-foreground: 180 96% 16%;
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 0 0% 10.2%;
 
-    --muted: 45 74% 97%;
-    --muted-foreground: 0 0% 50%;
+    --muted: 300 20% 20%;
+    --muted-foreground: 300 34% 75%;
 
-    --accent: 64 100% 86%;
-    --accent-foreground: 180 96% 16%;
+    --accent: 300 34% 75%;
+    --accent-foreground: 0 0% 10.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 45 74% 95%;
-    --input: 0 0% 97%;
-    --ring: 180 96% 16%;
+    --border: 300 20% 25%;
+    --input: 300 20% 20%;
+    --ring: 180 100% 50%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 45 74% 97%;
-    --sidebar-foreground: 0 0% 24%;
-    --sidebar-primary: 180 96% 16%;
+    --sidebar-background: 0 0% 10.2%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 300 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 64 100% 86%;
-    --sidebar-accent-foreground: 180 96% 16%;
-    --sidebar-border: 45 74% 95%;
-    --sidebar-ring: 180 96% 16%;
+    --sidebar-accent: 300 34% 75%;
+    --sidebar-accent-foreground: 0 0% 10.2%;
+    --sidebar-border: 300 20% 25%;
+    --sidebar-ring: 180 100% 50%;
   }
 
   .dark {
