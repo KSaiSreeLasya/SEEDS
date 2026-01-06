@@ -12,51 +12,52 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Holographic Vibe Brand Colors */
-    --magenta: 300 100% 50%;
+    /* Holographic Vibe Brand Colors - Based on Purple Holographic Sphere Logo */
+    --purple-primary: 270 100% 62%;
+    --purple-dark: 270 100% 45%;
     --cyan: 180 100% 50%;
     --dark-bg: 0 0% 10.2%;
-    --lavender: 300 34% 75%;
+    --lavender: 270 70% 85%;
     --white: 0 0% 100%;
 
-    /* Semantic Colors - Holographic Theme */
+    /* Semantic Colors - Purple Holographic Theme */
     --background: 0 0% 10.2%;
     --foreground: 0 0% 100%;
 
-    --card: 300 20% 15%;
+    --card: 270 40% 15%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 300 20% 15%;
+    --popover: 270 40% 15%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 300 100% 50%;
+    --primary: 270 100% 62%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 180 100% 50%;
     --secondary-foreground: 0 0% 10.2%;
 
-    --muted: 300 20% 20%;
-    --muted-foreground: 300 34% 75%;
+    --muted: 270 30% 20%;
+    --muted-foreground: 270 70% 85%;
 
-    --accent: 300 34% 75%;
+    --accent: 270 70% 85%;
     --accent-foreground: 0 0% 10.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 300 20% 25%;
-    --input: 300 20% 20%;
+    --border: 270 30% 25%;
+    --input: 270 30% 20%;
     --ring: 180 100% 50%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 10.2%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 300 100% 50%;
+    --sidebar-primary: 270 100% 62%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 300 34% 75%;
+    --sidebar-accent: 270 70% 85%;
     --sidebar-accent-foreground: 0 0% 10.2%;
-    --sidebar-border: 300 20% 25%;
+    --sidebar-border: 270 30% 25%;
     --sidebar-ring: 180 100% 50%;
   }
 
