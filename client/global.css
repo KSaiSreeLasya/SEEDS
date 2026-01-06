@@ -12,91 +12,91 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Brand Colors */
-    --teal-dark: 180 96% 16%;
-    --teal-medium: 180 95% 17%;
-    --teal-light: 180 40% 50%;
-    --lime: 64 100% 86%;
-    --beige: 45 74% 97%;
-    --neutral-dark: 0 0% 24%;
+    /* Holographic Vibe Brand Colors - Based on Purple Holographic Sphere Logo */
+    --purple-primary: 270 100% 62%;
+    --purple-dark: 270 100% 45%;
+    --cyan: 180 100% 50%;
+    --dark-bg: 0 0% 100%;
+    --lavender: 270 70% 85%;
+    --white: 0 0% 100%;
 
-    /* Semantic Colors */
+    /* Semantic Colors - Purple Holographic Theme with White Background */
     --background: 0 0% 100%;
-    --foreground: 0 0% 24%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 24%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 24%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 180 96% 16%;
+    --primary: 270 100% 62%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 64 100% 86%;
-    --secondary-foreground: 180 96% 16%;
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 45 74% 97%;
-    --muted-foreground: 0 0% 50%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 64 100% 86%;
-    --accent-foreground: 180 96% 16%;
+    --accent: 270 70% 85%;
+    --accent-foreground: 270 100% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 45 74% 95%;
+    --border: 270 30% 90%;
     --input: 0 0% 97%;
-    --ring: 180 96% 16%;
+    --ring: 270 100% 62%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 45 74% 97%;
-    --sidebar-foreground: 0 0% 24%;
-    --sidebar-primary: 180 96% 16%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 270 100% 62%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 64 100% 86%;
-    --sidebar-accent-foreground: 180 96% 16%;
-    --sidebar-border: 45 74% 95%;
-    --sidebar-ring: 180 96% 16%;
+    --sidebar-accent: 270 70% 85%;
+    --sidebar-accent-foreground: 270 100% 45%;
+    --sidebar-border: 270 30% 90%;
+    --sidebar-ring: 270 100% 62%;
   }
 
   .dark {
-    --background: 180 96% 12%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 8%;
+    --foreground: 0 0% 100%;
 
-    --card: 180 85% 20%;
-    --card-foreground: 0 0% 98%;
+    --card: 270 40% 12%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 180 85% 18%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 270 40% 12%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 64 100% 86%;
-    --primary-foreground: 180 96% 16%;
+    --primary: 270 100% 62%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 180 96% 16%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 0 0% 10.2%;
 
-    --muted: 180 40% 40%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 270 30% 18%;
+    --muted-foreground: 270 70% 85%;
 
-    --accent: 64 100% 86%;
-    --accent-foreground: 180 96% 16%;
+    --accent: 270 70% 85%;
+    --accent-foreground: 0 0% 10.2%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 180 40% 30%;
-    --input: 180 85% 25%;
-    --ring: 64 100% 86%;
-    --sidebar-background: 180 96% 12%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 64 100% 86%;
-    --sidebar-primary-foreground: 180 96% 16%;
-    --sidebar-accent: 180 40% 40%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 180 40% 30%;
-    --sidebar-ring: 64 100% 86%;
+    --border: 270 30% 22%;
+    --input: 270 30% 15%;
+    --ring: 180 100% 50%;
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 270 100% 62%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 70% 85%;
+    --sidebar-accent-foreground: 0 0% 10.2%;
+    --sidebar-border: 270 30% 22%;
+    --sidebar-ring: 180 100% 50%;
   }
 }
 
