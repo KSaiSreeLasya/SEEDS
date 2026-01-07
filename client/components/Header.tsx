@@ -9,7 +9,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-background border-b border-border">
+    <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
       <nav className="container mx-auto px-4 py-4 lg:py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -57,7 +57,7 @@ export default function Header() {
           <div className="hidden sm:flex items-center gap-4">
             <button
               onClick={handleGetStarted}
-              className="px-6 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
+              className="px-6 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 shadow-lg hover:shadow-xl transition-all font-heading"
             >
               Get My 90-Day Plan
             </button>
@@ -136,7 +136,7 @@ export default function Header() {
                 handleGetStarted();
                 setIsMobileMenuOpen(false);
               }}
-              className="w-full px-4 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
+              className="w-full px-4 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 shadow-lg hover:shadow-xl transition-all font-heading"
             >
               Get My 90-Day Plan
             </button>
