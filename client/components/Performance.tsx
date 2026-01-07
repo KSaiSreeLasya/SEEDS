@@ -213,7 +213,7 @@ export default function Performance() {
 
                   {isExpanded && (
                     <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
-                      <h5 className="font-semibold text-primary text-sm">
+                      <h5 className="font-semibold text-accent-foreground text-sm">
                         Our Approach:
                       </h5>
                       <ul className="space-y-2">
