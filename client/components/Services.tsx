@@ -3,129 +3,104 @@
 import { useState } from "react";
 
 export default function Services() {
-  const [expandedServices, setExpandedServices] = useState<
-    Record<string, boolean>
-  >({});
+  const [expandedSolution, setExpandedSolution] = useState<string | null>(null);
 
-  const services = [
+  const solutions = [
     {
-      icon: "🛍️",
-      title: "Ecommerce",
+      icon: "🏘️",
+      title: "Real Estate Channel Partners & Brokers",
       description:
-        "Powerful online stores that convert browsers into buyers. Seamless shopping experiences with secure payments and inventory management.",
+        "Get a steady flow of buyer and seller enquiries for the properties you represent. Hyper-local Google and Meta ads bring serious prospects into your funnel, ready for calls, site visits, and closings.",
       details: [
-        "Multi-channel sales integration across all major platforms",
-        "Advanced inventory management and real-time stock sync",
-        "Conversion rate optimization and A/B testing",
-        "Payment gateway integration with fraud protection",
-        "Customer analytics and behavior tracking",
+        "Hyper-local Google Search campaigns targeting property searches",
+        "Meta Lead Gen campaigns for buyer and seller enquiries",
+        "Location-based conversion tracking and ROI reporting",
+        "Integration with CRM and follow-up workflows",
       ],
     },
     {
-      icon: "🏨",
-      title: "Hospitality",
+      icon: "🏗️",
+      title: "Real Estate Investors & Wholesalers",
       description:
-        "Booking systems and guest experiences that drive revenue. From resorts to boutique hotels, we deliver digital solutions that welcome guests.",
+        "Capture motivated seller leads through 'sell my house fast', 'cash for homes', and investor-focused campaigns. High-intent funnels designed to identify and nurture distressed property opportunities.",
       details: [
-        "Reservation management systems with real-time availability",
-        "Guest experience personalization and loyalty programs",
-        "Channel manager integration for multi-property management",
-        "In-room digital concierge services",
-        "Revenue management optimization tools",
+        "High-intent keyword targeting for distressed properties",
+        "Lead scoring for motivated seller identification",
+        "Email and SMS nurture sequences for warm leads",
+        "Deal analysis and profitability dashboards",
       ],
     },
     {
-      icon: "✈️",
-      title: "Travel",
+      icon: "🏢",
+      title: "Real Estate Developers & Teams",
       description:
-        "Inspire wanderlust and simplify journeys. Dynamic booking platforms and immersive experiences for travel companies worldwide.",
+        "Fill your projects faster. Targeted campaigns for specific developments, towers, and inventory segments. From launch to closure, we keep demand active and qualified.",
       details: [
-        "Dynamic packaging and itinerary builders",
-        "Real-time flight and hotel comparison engines",
-        "Global distribution system integration",
-        "Visa and documentation tracking",
-        "Travel insurance integration and claims management",
-      ],
-    },
-    {
-      icon: "🤝",
-      title: "B2B",
-      description:
-        "Complex solutions for business relationships. Streamlined operations, partner portals, and enterprise integrations that scale.",
-      details: [
-        "Custom partner portal development",
-        "B2B marketplace solutions with vendor management",
-        "Supply chain visibility and tracking",
-        "Quote and order management automation",
-        "Enterprise API integrations and data synchronization",
-      ],
-    },
-    {
-      icon: "💼",
-      title: "Financial & Professional",
-      description:
-        "Secure, compliant digital solutions for finance and professional services. Build trust through elegant, regulated platforms.",
-      details: [
-        "Regulatory compliance management (GDPR, PCI-DSS, etc.)",
-        "Client portal with secure document sharing",
-        "Portfolio management and reporting dashboards",
-        "KYC/AML workflow automation",
-        "Audit trails and transaction monitoring",
-      ],
-    },
-    {
-      icon: "🚀",
-      title: "SaaS",
-      description:
-        "Subscription platforms built for growth. User-centric interfaces, analytics, and scalable infrastructure for modern SaaS companies.",
-      details: [
-        "Subscription billing and recurring payment management",
-        "Usage-based pricing and metering",
-        "Customer onboarding and activation flows",
-        "Advanced analytics and cohort analysis",
-        "API-first architecture for seamless integrations",
+        "Project-specific landing pages and lead funnels",
+        "Demographic targeting for ideal buyer profiles",
+        "Retargeting campaigns for site visitors",
+        "Conversion optimization for multi-unit sales",
       ],
     },
     {
       icon: "💳",
-      title: "Fintech",
+      title: "B2B Fintech & SaaS Platforms",
       description:
-        "Innovative financial technology that disrupts the industry. Payment systems, lending platforms, and digital wallets reimagined.",
+        "Generate qualified demos, trials, and sales-qualified opportunities. Account-based and intent-driven funnels designed for fintech decision-makers and ideal customer profiles.",
       details: [
-        "Open banking API integration and financial data aggregation",
-        "Real-time payment processing and settlement",
-        "Lending platform automation and credit decisioning",
-        "Digital wallet and payment instrument management",
-        "Fraud detection and anti-money laundering systems",
+        "Account-based marketing for enterprise prospects",
+        "Intent-driven targeting for decision-makers",
+        "Demo request and trial signup funnels",
+        "Sales-qualified lead scoring and handoff workflows",
+      ],
+    },
+    {
+      icon: "🔐",
+      title: "Compliance-First Fintech",
+      description:
+        "Navigate regulated fintech environments with campaigns built for trust, compliance, and quality leads. Educational funnels that qualify before pitching.",
+      details: [
+        "Compliance-focused ad copy and landing pages",
+        "Regulatory disclosure integration in campaigns",
+        "Educational content marketing for trust-building",
+        "Audit trail documentation for regulatory compliance",
+      ],
+    },
+    {
+      icon: "📈",
+      title: "Payment & Lending Platforms",
+      description:
+        "Drive merchant signups, borrower applications, and integration partnerships. Multi-touch nurture sequences that move prospects through longer B2B2B sales cycles.",
+      details: [
+        "Merchant acquisition and partner onboarding campaigns",
+        "Borrower application funnel optimization",
+        "Partnership development and integration marketing",
+        "Multi-touch attribution across longer sales cycles",
       ],
     },
   ];
 
-  const toggleService = (title: string) => {
-    setExpandedServices((prev) => ({
-      ...prev,
-      [title]: !prev[title],
-    }));
+  const toggleSolution = (title: string) => {
+    setExpandedSolution(expandedSolution === title ? null : title);
   };
 
   return (
     <section id="services" className="py-16 md:py-24 lg:py-32 bg-muted">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16 md:mb-24 animate-slide-up">
+        <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24 animate-slide-up">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-accent-foreground mb-4">
             Industry Solutions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Specialized digital solutions for the industries that matter. We
-            bring deep expertise and innovative thinking to your sector.
+            Specialized lead generation for US real estate and fintech businesses that depend on predictable, high-quality buyer enquiries and qualified demos.
           </p>
         </div>
 
-        {/* Services Grid */}
+        {/* Solutions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {services.map((service, index) => {
-            const isExpanded = expandedServices[service.title];
+          {solutions.map((solution, index) => {
+            const isExpanded = expandedSolution === solution.title;
             return (
               <div
                 key={index}
@@ -133,22 +108,22 @@ export default function Services() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
+                  {solution.icon}
                 </div>
-                <h3 className="text-xl font-heading font-semibold text-accent-foreground mb-3">
-                  {service.title}
+                <h3 className="text-lg font-heading font-semibold text-accent-foreground mb-3">
+                  {solution.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {service.description}
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {solution.description}
                 </p>
 
                 {isExpanded && (
                   <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
                     <h4 className="font-semibold text-accent-foreground text-sm">
-                      Key Features:
+                      Our Approach:
                     </h4>
                     <ul className="space-y-2">
-                      {service.details.map((detail, idx) => (
+                      {solution.details.map((detail, idx) => (
                         <li
                           key={idx}
                           className="flex items-start gap-2 text-sm text-muted-foreground"
@@ -166,7 +141,7 @@ export default function Services() {
                 )}
 
                 <button
-                  onClick={() => toggleService(service.title)}
+                  onClick={() => toggleSolution(solution.title)}
                   className="mt-4 inline-flex items-center gap-2 text-accent-foreground font-semibold hover:opacity-70 transition-opacity cursor-pointer"
                 >
                   {isExpanded ? "Show less" : "Learn more"}
