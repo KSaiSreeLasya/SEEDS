@@ -2,7 +2,7 @@ import { useState } from "react";
 import ContactForm from "./ContactForm";
 
 export default function CTA() {
-  const [openForm, setOpenForm] = useState<"project" | "call" | null>(null);
+  const [openForm, setOpenForm] = useState<"project" | "call" | "plan" | null>(null);
 
   return (
     <section id="contact" className="py-16 md:py-24 lg:py-32 bg-background">
@@ -74,7 +74,7 @@ export default function CTA() {
       <ContactForm
         isOpen={openForm !== null}
         onOpenChange={(open) => setOpenForm(open ? openForm : null)}
-        type={openForm || "project"}
+        type={(openForm || "project") as "project" | "call" | "plan"}
       />
     </section>
   );
