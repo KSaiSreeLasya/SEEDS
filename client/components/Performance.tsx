@@ -80,13 +80,13 @@ export default function Performance() {
             {specialists.map((item, index) => (
               <div
                 key={index}
-                className="p-6 bg-muted rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300 animate-slide-up"
+                className="p-6 bg-muted rounded-2xl border border-border hover:border-accent-foreground hover:shadow-lg transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <p className="text-4xl font-heading font-bold text-primary mb-2">
+                <p className="text-4xl font-heading font-bold text-accent-foreground mb-2">
                   {item.metric}
                 </p>
-                <h3 className="text-lg font-heading font-semibold text-primary mb-3">
+                <h3 className="text-lg font-heading font-semibold text-accent-foreground mb-3">
                   {item.label}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
