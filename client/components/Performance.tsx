@@ -7,30 +7,69 @@ export default function Performance() {
     Record<string, boolean>
   >({});
 
-  const specialists = [
+  const metrics = [
     {
       metric: "2.5x",
-      label: "Average ROI Increase",
+      label: "Average Lead Efficiency Improvement",
       description:
-        "Our data-driven strategies deliver measurable results that impact your bottom line.",
+        "Better targeting and landing pages reduce waste and improve qualified lead ratios.",
     },
     {
       metric: "150+",
-      label: "Campaigns Optimized",
+      label: "Real Estate & Fintech Campaigns",
       description:
-        "From PPC to content marketing, we've refined strategies across all digital channels.",
+        "Proven experience across launches, ongoing sales, remarketing, and account-based funnels.",
     },
     {
       metric: "98%",
-      label: "Client Retention",
+      label: "Active Client Retention",
       description:
-        "We build partnerships that last, delivering consistent growth year after year.",
+        "Clients stay because they see consistent pipeline and measurable results.",
     },
     {
       metric: "48h",
-      label: "Campaign Launch Time",
+      label: "Campaign Launch Window",
       description:
-        "Our agile process gets your campaigns live faster without compromising quality.",
+        "From strategy approval to live campaigns, we move fast while maintaining quality.",
+    },
+  ];
+
+  const specialists = [
+    {
+      title: "Google Search & Performance Max",
+      description:
+        "Capture high-intent searches from property buyers and fintech decision-makers at the exact moment they're evaluating options. Hyper-local keywords for real estate, pain-point targeting for fintech. Strong negative filtering removes junk traffic.",
+      icon: "🔎",
+    },
+    {
+      title: "Meta Lead Generation",
+      description:
+        "Use Facebook and Instagram to create interest, run time-sensitive offers (for real estate), and capture leads at scale. Visual storytelling, carousel ads, reels, and lead forms optimized for conversion.",
+      icon: "🎯",
+    },
+    {
+      title: "Landing Pages & CRO",
+      description:
+        "Convert clicks into enquiries with clean, mobile-first landing pages built for decision-makers. Clear USPs, trust signals, compliance badges (for fintech), live chat, and easy forms that don't ask for too much.",
+      icon: "🧪",
+    },
+    {
+      title: "Retargeting & Nurturing",
+      description:
+        "Stay top-of-mind with people who clicked but didn't enquire, or enquired but went silent. Email sequences, WhatsApp flows, and dynamic ads that remind prospects why your offer matters.",
+      icon: "🔁",
+    },
+    {
+      title: "Analytics, Scoring & Reporting",
+      description:
+        "Understand exactly which campaigns, creatives, and segments are working. AI-powered lead scoring prioritizes warm accounts for sales. Channel-wise dashboards and weekly performance summaries.",
+      icon: "📊",
+    },
+    {
+      title: "Multi-Market Expansion",
+      description:
+        "Add new cities (for real estate), new ICP segments (for fintech), or new product lines without rebuilding everything. Your lead engine scales with you.",
+      icon: "🌍",
     },
   ];
 
@@ -45,39 +84,35 @@ export default function Performance() {
                 ⚡ Performance
               </span>
               <span className="text-sm text-primary-foreground">
-                Marketing Excellence
+                Lead Generation Excellence
               </span>
             </div>
 
             <div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-accent-foreground mb-6">
-                Performance Marketing Specialists
+                Performance Marketing for Serious Buyers & Decision-Makers
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                We don't believe in vanity metrics. Every strategy, every
-                campaign, and every tactic is laser-focused on driving
-                measurable results for your business.
+                No vanity metrics. Every dollar is tracked from click to enquiry to closed deal. The focus is simple: more qualified conversations for your sales team.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                From acquisition to retention, we optimize every touchpoint in
-                your customer journey to maximize revenue, reduce costs, and
-                accelerate growth.
+                Axisphere combines Google Search, Performance Max, and Meta campaigns with conversion-optimized landing pages to attract decision-makers who are actively searching or evaluating solutions. Every touchpoint—from ad copy to forms and follow-ups—is designed to reduce waste, improve cost per lead, and increase the percentage of leads that actually talk to your team and move toward a decision.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center">
-                View Case Studies
+                View Sample Funnels
               </button>
               <button className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-center">
-                Get Performance Audit
+                Get Free Account Audit
               </button>
             </div>
           </div>
 
           {/* Metrics Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {specialists.map((item, index) => (
+            {metrics.map((item, index) => (
               <div
                 key={index}
                 className="p-6 bg-muted rounded-2xl border border-border hover:border-accent-foreground hover:shadow-lg transition-all duration-300 animate-slide-up"
@@ -101,95 +136,15 @@ export default function Performance() {
         <div className="mt-16 md:mt-24 pt-16 md:pt-24 border-t border-border">
           <div className="mb-12 animate-slide-up">
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-accent-foreground mb-4">
-              Performance Specialists
+              What We Specialize In
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              We're not everything to everyone. Instead, we deliver our core
-              specialities where we know we can have the biggest impact.
+              We focus on the core levers that move numbers for real estate and fintech businesses in the USA.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            {[
-              {
-                title: "Organic Search",
-                description:
-                  "Get found by your customers at the right time across search engines, marketplaces and app stores.",
-                icon: "🔍",
-                details: [
-                  "Comprehensive keyword research and strategy",
-                  "On-page and technical SEO optimization",
-                  "Content creation and link building",
-                  "Local SEO and Google Business optimization",
-                  "Performance tracking and monthly reporting",
-                ],
-              },
-              {
-                title: "Paid Search",
-                description:
-                  "We develop innovative media campaigns that drive qualified leads from search engines.",
-                icon: "🎯",
-                details: [
-                  "Google Ads account setup and optimization",
-                  "Keyword bidding strategy and budget allocation",
-                  "Ad copy testing and conversion rate optimization",
-                  "Landing page design and A/B testing",
-                  "ROAS tracking and performance analysis",
-                ],
-              },
-              {
-                title: "Social Media",
-                description:
-                  "We pair creativity with insight to deliver a data driven blend of awareness, engagement, and performance.",
-                icon: "📢",
-                details: [
-                  "Social media strategy and content calendar",
-                  "Community management and engagement",
-                  "Paid social campaigns across all major platforms",
-                  "Influencer partnership identification",
-                  "Social listening and sentiment analysis",
-                ],
-              },
-              {
-                title: "PR",
-                description:
-                  "Strategic brand positioning with search intelligence to build trust, boost brand visibility, and secure the right press coverage to grow your business.",
-                icon: "📣",
-                details: [
-                  "Media relations and press outreach",
-                  "Press release distribution and syndication",
-                  "Crisis communication management",
-                  "Brand reputation monitoring",
-                  "Media coverage tracking and analysis",
-                ],
-              },
-              {
-                title: "Design",
-                description:
-                  "Where creativity and strategy combine to create innovative, impactful visuals that drive tangible, measurable results.",
-                icon: "🎨",
-                details: [
-                  "Brand identity and logo design",
-                  "UI/UX design for web and mobile",
-                  "Marketing collateral and advertising design",
-                  "Design system development",
-                  "Creative direction and art direction",
-                ],
-              },
-              {
-                title: "International Expansion",
-                description:
-                  "Launch and scale your digital marketing into new markets with strategies tailored for global success and seamless localization.",
-                icon: "🌍",
-                details: [
-                  "Market research and localization strategy",
-                  "Multi-language campaign management",
-                  "Cultural adaptation and messaging",
-                  "Local partnership and vendor coordination",
-                  "Regional compliance and regulatory guidance",
-                ],
-              },
-            ].map((specialty, index) => {
+            {specialists.map((specialty, index) => {
               const isExpanded = expandedSpecialists[specialty.title];
               return (
                 <div
@@ -209,55 +164,6 @@ export default function Performance() {
                         {specialty.description}
                       </p>
                     </div>
-                  </div>
-
-                  {isExpanded && (
-                    <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
-                      <h5 className="font-semibold text-accent-foreground text-sm">
-                        Our Approach:
-                      </h5>
-                      <ul className="space-y-2">
-                        {specialty.details.map((detail, idx) => (
-                          <li
-                            key={idx}
-                            className="flex items-start gap-2 text-sm text-muted-foreground"
-                          >
-                            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-accent/10 flex-shrink-0 mt-0.5">
-                              <span className="text-xs font-semibold text-accent-foreground">
-                                •
-                              </span>
-                            </span>
-                            {detail}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  <div className="flex items-start justify-end pt-4">
-                    <button
-                      onClick={() =>
-                        setExpandedSpecialists((prev) => ({
-                          ...prev,
-                          [specialty.title]: !prev[specialty.title],
-                        }))
-                      }
-                      className="w-8 h-8 rounded bg-accent flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
-                    >
-                      <svg
-                        className={`w-5 h-5 text-accent-foreground transition-transform ${isExpanded ? "rotate-45" : ""}`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 4v16m8-8H4"
-                        />
-                      </svg>
-                    </button>
                   </div>
                 </div>
               );
