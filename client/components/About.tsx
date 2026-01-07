@@ -62,10 +62,12 @@ export default function About() {
               </h2>
               <p className="text-lg opacity-90 leading-relaxed mb-4">
                 Axisphere is a performance marketing and lead generation partner
-                for US <span className="whitespace-nowrap">real estate</span> and <span className="whitespace-nowrap">fintech</span> businesses that want predictable,
-                trackable growth. Since 2022, our team has been running
-                data-driven campaigns that focus on one thing: delivering
-                qualified leads and conversations for your sales team.
+                for US <span className="whitespace-nowrap">real estate</span>{" "}
+                and <span className="whitespace-nowrap">fintech</span>{" "}
+                businesses that want predictable, trackable growth. Since 2022,
+                our team has been running data-driven campaigns that focus on
+                one thing: delivering qualified leads and conversations for your
+                sales team.
               </p>
               <p className="text-lg opacity-90 leading-relaxed">
                 With specialists across media buying, automation, design, and

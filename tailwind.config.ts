@@ -116,7 +116,7 @@ export default {
             opacity: "1",
           },
         },
-        "float": {
+        float: {
           "0%, 100%": {
             transform: "translateY(0px)",
           },
@@ -139,7 +139,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out",
         "slide-up": "slide-up 0.5s ease-out",
         "scale-in": "scale-in 0.5s ease-out",
-        "float": "float 3s ease-in-out infinite",
+        float: "float 3s ease-in-out infinite",
         "gradient-shift": "gradient-shift 6s ease infinite",
       },
     },

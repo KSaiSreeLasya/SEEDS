@@ -2,7 +2,9 @@ import { useState } from "react";
 import ContactForm from "./ContactForm";
 
 export default function Hero() {
-  const [openForm, setOpenForm] = useState<"project" | "call" | "plan" | null>(null);
+  const [openForm, setOpenForm] = useState<"project" | "call" | "plan" | null>(
+    null,
+  );
 
   const handleGetStarted = () => {
     setOpenForm("plan");
@@ -28,7 +30,8 @@ export default function Hero() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight">
-              90-Day Lead Engine for US <span className="whitespace-nowrap">Real Estate & Fintech</span>
+              90-Day Lead Engine for US{" "}
+              <span className="whitespace-nowrap">Real Estate & Fintech</span>
             </h1>
 
             <p className="text-lg md:text-xl opacity-90 max-w-lg leading-relaxed">
@@ -63,7 +66,12 @@ export default function Hero() {
                 <p className="font-heading font-bold text-lg text-accent-foreground">
                   150+
                 </p>
-                <p className="whitespace-nowrap"><span className="whitespace-nowrap">Real Estate & Fintech</span> Campaigns</p>
+                <p className="whitespace-nowrap">
+                  <span className="whitespace-nowrap">
+                    Real Estate & Fintech
+                  </span>{" "}
+                  Campaigns
+                </p>
               </div>
               <div className="flex-1 p-4 rounded-lg bg-accent/5 border border-accent/20">
                 <p className="font-heading font-bold text-lg text-accent-foreground">
@@ -98,19 +106,27 @@ export default function Hero() {
                   <div className="flex items-end justify-center gap-3">
                     <div className="flex flex-col items-center">
                       <div className="w-8 h-16 bg-gradient-to-t from-secondary to-secondary/50 rounded-t-lg shadow-lg"></div>
-                      <span className="text-xs text-accent-foreground mt-2 font-semibold">Week 1</span>
+                      <span className="text-xs text-accent-foreground mt-2 font-semibold">
+                        Week 1
+                      </span>
                     </div>
                     <div className="flex flex-col items-center">
                       <div className="w-8 h-24 bg-gradient-to-t from-secondary to-secondary/50 rounded-t-lg shadow-lg"></div>
-                      <span className="text-xs text-accent-foreground mt-2 font-semibold">Week 2</span>
+                      <span className="text-xs text-accent-foreground mt-2 font-semibold">
+                        Week 2
+                      </span>
                     </div>
                     <div className="flex flex-col items-center">
                       <div className="w-8 h-32 bg-gradient-to-t from-accent-foreground to-secondary rounded-t-lg shadow-lg"></div>
-                      <span className="text-xs text-accent-foreground mt-2 font-semibold">Week 3</span>
+                      <span className="text-xs text-accent-foreground mt-2 font-semibold">
+                        Week 3
+                      </span>
                     </div>
                     <div className="flex flex-col items-center">
                       <div className="w-8 h-40 bg-gradient-to-t from-accent-foreground to-accent-foreground/70 rounded-t-lg shadow-lg animate-pulse"></div>
-                      <span className="text-xs text-accent-foreground mt-2 font-semibold">Week 4</span>
+                      <span className="text-xs text-accent-foreground mt-2 font-semibold">
+                        Week 4
+                      </span>
                     </div>
                   </div>
 

@@ -20,8 +20,9 @@ export default function Footer() {
               <span className="font-heading font-bold text-xl">Axisphere</span>
             </Link>
             <p className="text-sm opacity-80">
-              Performance marketing and lead generation for USA <span className="whitespace-nowrap">real estate</span> &
-              fintech growth.
+              Performance marketing and lead generation for USA{" "}
+              <span className="whitespace-nowrap">real estate</span> & fintech
+              growth.
             </p>
           </div>
 
@@ -158,13 +159,22 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-80">
             <p>© {currentYear} Axisphere. All rights reserved.</p>
             <div className="flex items-center gap-6">
-              <a href="#" className="hover:opacity-100 transition-opacity font-medium">
+              <a
+                href="#"
+                className="hover:opacity-100 transition-opacity font-medium"
+              >
                 Twitter
               </a>
-              <a href="#" className="hover:opacity-100 transition-opacity font-medium">
+              <a
+                href="#"
+                className="hover:opacity-100 transition-opacity font-medium"
+              >
                 LinkedIn
               </a>
-              <a href="#" className="hover:opacity-100 transition-opacity font-medium">
+              <a
+                href="#"
+                className="hover:opacity-100 transition-opacity font-medium"
+              >
                 GitHub
               </a>
             </div>

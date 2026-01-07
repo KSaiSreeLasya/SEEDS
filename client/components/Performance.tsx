@@ -151,8 +151,10 @@ export default function Performance() {
               What We Specialize In
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              We focus on the core levers that move numbers for <span className="whitespace-nowrap">real estate</span> and
-              <span className="whitespace-nowrap">fintech</span> businesses in the USA.
+              We focus on the core levers that move numbers for{" "}
+              <span className="whitespace-nowrap">real estate</span> and
+              <span className="whitespace-nowrap">fintech</span> businesses in
+              the USA.
             </p>
           </div>
 

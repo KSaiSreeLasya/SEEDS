@@ -4,7 +4,9 @@ import ContactForm from "./ContactForm";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [openForm, setOpenForm] = useState<"project" | "call" | "plan" | null>(null);
+  const [openForm, setOpenForm] = useState<"project" | "call" | "plan" | null>(
+    null,
+  );
 
   const handleGetStarted = () => {
     setOpenForm("plan");

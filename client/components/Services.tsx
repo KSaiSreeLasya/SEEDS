@@ -90,13 +90,17 @@ export default function Services() {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24 animate-slide-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full border border-secondary/20 mb-4">
-            <span className="text-secondary font-semibold text-sm">✨ Solutions</span>
+            <span className="text-secondary font-semibold text-sm">
+              ✨ Solutions
+            </span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-accent-foreground mb-4">
             Industry Solutions
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Specialized lead generation for US <span className="whitespace-nowrap">real estate</span> and <span className="whitespace-nowrap">fintech</span>
+            Specialized lead generation for US{" "}
+            <span className="whitespace-nowrap">real estate</span> and{" "}
+            <span className="whitespace-nowrap">fintech</span>
             businesses that depend on predictable, high-quality buyer enquiries
             and qualified demos.
           </p>
