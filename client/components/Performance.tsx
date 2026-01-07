@@ -245,7 +245,7 @@ export default function Performance() {
                       className="w-8 h-8 rounded bg-accent flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
                     >
                       <svg
-                        className={`w-5 h-5 text-primary transition-transform ${isExpanded ? "rotate-45" : ""}`}
+                        className={`w-5 h-5 text-accent-foreground transition-transform ${isExpanded ? "rotate-45" : ""}`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
