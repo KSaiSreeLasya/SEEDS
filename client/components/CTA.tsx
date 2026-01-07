@@ -42,12 +42,12 @@ export default function CTA() {
                 Trusted by leading brands
               </p>
               <h3 className="text-2xl font-heading font-bold text-foreground">
-                Companies we've worked with
+                Leading Real Estate & Fintech Companies
               </h3>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              {["TechStart", "Design Co", "Growth Labs", "Digital Hub"].map(
+              {["Real Estate Partner 1", "Fintech SaaS 1", "Real Estate Developer 1", "Fintech Platform 1"].map(
                 (company, index) => (
                   <div
                     key={index}
