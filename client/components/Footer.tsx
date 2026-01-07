@@ -10,19 +10,15 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F07ba826074254d3191a55ee32e800a58%2F9a5617e61447487cab49264f51c9bfde?format=webp&width=800"
-                alt="Holographic Sphere Logo"
-                className="w-16 h-16 rounded-lg object-cover"
-              />
-              <span className="font-heading font-bold text-lg">Seed</span>
+              <span className="font-heading font-bold text-2xl">Axisphere</span>
             </Link>
             <p className="text-sm opacity-90">
-              Building beautiful, modern digital experiences.
+              Performance marketing and lead generation for USA real estate &
+              fintech growth.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Product */}
           <div>
             <h3 className="font-heading font-semibold text-sm uppercase tracking-wider mb-4">
               Product
@@ -46,10 +42,18 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="#solutions"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  About
+                  90-Day Program
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#solutions"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
+                  Solutions
                 </a>
               </li>
             </ul>
@@ -66,7 +70,7 @@ export default function Footer() {
                   href="#"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Blog
+                  Blog & Insights
                 </a>
               </li>
               <li>
@@ -74,7 +78,15 @@ export default function Footer() {
                   href="#"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Documentation
+                  Case Studies
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
+                  Guides & Playbooks
                 </a>
               </li>
               <li>
@@ -99,7 +111,7 @@ export default function Footer() {
                   href="#"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Privacy
+                  Privacy Policy
                 </a>
               </li>
               <li>
@@ -107,7 +119,7 @@ export default function Footer() {
                   href="#"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Terms
+                  Terms of Service
                 </a>
               </li>
               <li>
@@ -123,18 +135,32 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-opacity-20 border-accent pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-80">
-          <p>© {currentYear} Seed. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            <a href="#" className="hover:opacity-100 transition-opacity">
-              Twitter
-            </a>
-            <a href="#" className="hover:opacity-100 transition-opacity">
-              LinkedIn
-            </a>
-            <a href="#" className="hover:opacity-100 transition-opacity">
-              GitHub
-            </a>
+        <div className="border-t border-opacity-20 border-accent pt-8">
+          <div className="mb-6">
+            <p className="text-sm opacity-90 mb-2">
+              <span className="font-semibold">Contact:</span>{" "}
+              hello@axisphere.media | +1 (US Number) |{" "}
+              <a
+                href="#contact"
+                className="hover:opacity-100 transition-opacity"
+              >
+                Schedule a Call
+              </a>
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-80">
+            <p>© {currentYear} Axisphere. All rights reserved.</p>
+            <div className="flex items-center gap-6">
+              <a href="#" className="hover:opacity-100 transition-opacity">
+                Twitter
+              </a>
+              <a href="#" className="hover:opacity-100 transition-opacity">
+                LinkedIn
+              </a>
+              <a href="#" className="hover:opacity-100 transition-opacity">
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>

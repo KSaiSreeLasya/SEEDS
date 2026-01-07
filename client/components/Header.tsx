@@ -14,13 +14,8 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F07ba826074254d3191a55ee32e800a58%2F9a5617e61447487cab49264f51c9bfde?format=webp&width=800"
-              alt="Holographic Sphere Logo"
-              className="w-16 h-16 rounded-lg object-cover"
-            />
-            <span className="font-heading font-bold text-xl text-primary hidden sm:block">
-              Seed
+            <span className="font-heading font-bold text-2xl text-primary">
+              Axisphere
             </span>
           </Link>
 
@@ -37,6 +32,12 @@ export default function Header() {
               className="text-foreground font-medium hover:text-secondary transition-colors"
             >
               Services
+            </a>
+            <a
+              href="#solutions"
+              className="text-foreground font-medium hover:text-secondary transition-colors"
+            >
+              Solutions
             </a>
             <a
               href="#about"
@@ -58,7 +59,7 @@ export default function Header() {
               onClick={handleGetStarted}
               className="px-6 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
             >
-              Get Started
+              Get My 90-Day Plan
             </button>
           </div>
 
@@ -110,6 +111,13 @@ export default function Header() {
               Services
             </a>
             <a
+              href="#solutions"
+              className="block px-4 py-2 text-foreground hover:bg-muted hover:text-secondary rounded-lg transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Solutions
+            </a>
+            <a
               href="#about"
               className="block px-4 py-2 text-foreground hover:bg-muted hover:text-secondary rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -130,7 +138,7 @@ export default function Header() {
               }}
               className="w-full px-4 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
             >
-              Get Started
+              Get My 90-Day Plan
             </button>
           </div>
         )}
