@@ -111,6 +111,13 @@ export default function Header() {
               Services
             </a>
             <a
+              href="#solutions"
+              className="block px-4 py-2 text-foreground hover:bg-muted hover:text-secondary rounded-lg transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Solutions
+            </a>
+            <a
               href="#about"
               className="block px-4 py-2 text-foreground hover:bg-muted hover:text-secondary rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -131,7 +138,7 @@ export default function Header() {
               }}
               className="w-full px-4 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
             >
-              Get Started
+              Get My 90-Day Plan
             </button>
           </div>
         )}
