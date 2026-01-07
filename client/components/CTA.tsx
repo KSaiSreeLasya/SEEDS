@@ -39,7 +39,7 @@ export default function CTA() {
               <p className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-2">
                 Trusted by leading brands
               </p>
-              <h3 className="text-2xl font-heading font-bold text-primary">
+              <h3 className="text-2xl font-heading font-bold text-foreground">
                 Companies we've worked with
               </h3>
             </div>
