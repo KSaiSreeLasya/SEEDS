@@ -3,8 +3,8 @@ export default function Hero() {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleLearnMore = () => {
-    document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+  const handleSpecialist = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -18,17 +18,20 @@ export default function Hero() {
                 ✨ New
               </span>
               <span className="text-accent-foreground text-sm">
-                Launching this season
+                90-Day Acquisition Program
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight">
-              Digital design for the modern age
+              90-Day Lead Engine for US Real Estate & Fintech
             </h1>
 
             <p className="text-lg md:text-xl opacity-90 max-w-lg leading-relaxed">
-              We create beautiful, functional digital experiences that help
-              brands grow and connect with their audience in meaningful ways.
+              Performance-driven Google, Meta, and outbound campaigns to generate qualified leads, demos, and deals for your sales team.
+            </p>
+
+            <p className="text-base opacity-80 max-w-lg leading-relaxed">
+              From high-intent property buyer searches to compliant fintech demo funnels, Axisphere builds and runs AI-powered campaigns that deliver consistent, measurable results. Your goal is closing more deals. Ours is giving you the steady pipeline you need.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -36,13 +39,13 @@ export default function Hero() {
                 onClick={handleGetStarted}
                 className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center"
               >
-                Get Started
+                Get My 90-Day Plan
               </button>
               <button
-                onClick={handleLearnMore}
+                onClick={handleSpecialist}
                 className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-center"
               >
-                Learn More
+                Talk to a Specialist
               </button>
             </div>
 
@@ -51,19 +54,19 @@ export default function Hero() {
                 <p className="font-heading font-bold text-lg text-accent-foreground">
                   150+
                 </p>
-                <p>Projects Completed</p>
+                <p>Real Estate & Fintech Campaigns</p>
               </div>
               <div>
                 <p className="font-heading font-bold text-lg text-accent-foreground">
                   98%
                 </p>
-                <p>Client Satisfaction</p>
+                <p>Active Client Retention</p>
               </div>
               <div>
                 <p className="font-heading font-bold text-lg text-accent-foreground">
-                  5+
+                  2,000+
                 </p>
-                <p>Years Experience</p>
+                <p>Leads Generated Monthly</p>
               </div>
             </div>
           </div>
@@ -79,13 +82,13 @@ export default function Hero() {
               <div className="absolute bottom-20 left-10 w-40 h-40 bg-accent rounded-full opacity-10 animate-pulse"></div>
               <div className="relative h-full flex items-center justify-center">
                 <div className="text-center">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F07ba826074254d3191a55ee32e800a58%2F9a5617e61447487cab49264f51c9bfde?format=webp&width=800"
-                    alt="Holographic Sphere"
-                    className="w-64 h-64 object-contain mx-auto mb-4 drop-shadow-lg"
-                  />
-                  <p className="font-heading font-bold text-2xl">Seed Studio</p>
-                  <p className="opacity-70 mt-2">Design & Development</p>
+                  <div className="w-48 h-48 mx-auto mb-4 flex items-center justify-center">
+                    <svg className="w-full h-full text-accent-foreground opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7H5v12h12V9m0-2h4v4m0 0l-4-4m4 4l-8 8" />
+                    </svg>
+                  </div>
+                  <p className="font-heading font-bold text-2xl">Lead Growth Engine</p>
+                  <p className="opacity-70 mt-2">Performance Marketing for Real Estate & Fintech</p>
                 </div>
               </div>
             </div>
