@@ -79,11 +79,11 @@ export default function Performance() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-8 animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary rounded-full">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary rounded-full shadow-lg hover:shadow-xl transition-shadow">
               <span className="text-primary-foreground font-semibold text-sm">
                 ⚡ Performance
               </span>
-              <span className="text-sm text-primary-foreground">
+              <span className="text-sm text-primary-foreground font-medium">
                 Lead Generation Excellence
               </span>
             </div>
@@ -109,10 +109,10 @@ export default function Performance() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center">
+              <button className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 shadow-lg hover:shadow-xl transition-all text-center">
                 View Sample Funnels
               </button>
-              <button className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-center">
+              <button className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white hover:shadow-lg transition-all text-center">
                 Get Free Account Audit
               </button>
             </div>
@@ -123,7 +123,7 @@ export default function Performance() {
             {metrics.map((item, index) => (
               <div
                 key={index}
-                className="p-6 bg-muted rounded-2xl border border-border hover:border-accent-foreground hover:shadow-lg transition-all duration-300 animate-slide-up"
+                className="p-6 bg-muted rounded-2xl border border-border hover:border-accent-foreground hover:shadow-lg shadow-md transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <p className="text-4xl font-heading font-bold text-accent-foreground mb-2">
@@ -147,8 +147,8 @@ export default function Performance() {
               What We Specialize In
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              We focus on the core levers that move numbers for real estate and
-              fintech businesses in the USA.
+              We focus on the core levers that move numbers for <span className="whitespace-nowrap">real estate</span> and
+              <span className="whitespace-nowrap">fintech</span> businesses in the USA.
             </p>
           </div>
 
@@ -158,7 +158,7 @@ export default function Performance() {
               return (
                 <div
                   key={index}
-                  className="p-6 md:p-8 bg-muted rounded-2xl border border-border hover:shadow-lg hover:border-primary transition-all duration-300 animate-slide-up"
+                  className="p-6 md:p-8 bg-muted rounded-2xl border border-border hover:shadow-lg hover:border-primary shadow-md transition-all duration-300 animate-slide-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex gap-6">
