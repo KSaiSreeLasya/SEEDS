@@ -14,7 +14,9 @@ export default function CTA() {
               Ready to Launch Your 90-Day Lead Engine?
             </h2>
             <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-8">
-              If you're a US real estate or fintech business that wants consistent, measurable buyer and prospect enquiries, let's design the right funnel for your market and business model.
+              If you're a US real estate or fintech business that wants
+              consistent, measurable buyer and prospect enquiries, let's design
+              the right funnel for your market and business model.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <button
@@ -31,7 +33,8 @@ export default function CTA() {
               </button>
             </div>
             <p className="text-sm opacity-80">
-              No long-term lock-in. Month-to-month engagement starting immediately after strategy phase.
+              No long-term lock-in. Month-to-month engagement starting
+              immediately after strategy phase.
             </p>
           </div>
 
@@ -47,19 +50,22 @@ export default function CTA() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              {["Real Estate Partner 1", "Fintech SaaS 1", "Real Estate Developer 1", "Fintech Platform 1"].map(
-                (company, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center justify-center p-6 bg-muted rounded-xl border border-border hover:border-primary/30 transition-colors animate-slide-up"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    <p className="font-semibold text-muted-foreground">
-                      {company}
-                    </p>
-                  </div>
-                ),
-              )}
+              {[
+                "Real Estate Partner 1",
+                "Fintech SaaS 1",
+                "Real Estate Developer 1",
+                "Fintech Platform 1",
+              ].map((company, index) => (
+                <div
+                  key={index}
+                  className="flex items-center justify-center p-6 bg-muted rounded-xl border border-border hover:border-primary/30 transition-colors animate-slide-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <p className="font-semibold text-muted-foreground">
+                    {company}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

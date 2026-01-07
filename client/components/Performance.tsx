@@ -93,10 +93,18 @@ export default function Performance() {
                 Performance Marketing for Serious Buyers & Decision-Makers
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                No vanity metrics. Every dollar is tracked from click to enquiry to closed deal. The focus is simple: more qualified conversations for your sales team.
+                No vanity metrics. Every dollar is tracked from click to enquiry
+                to closed deal. The focus is simple: more qualified
+                conversations for your sales team.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Axisphere combines Google Search, Performance Max, and Meta campaigns with conversion-optimized landing pages to attract decision-makers who are actively searching or evaluating solutions. Every touchpoint—from ad copy to forms and follow-ups—is designed to reduce waste, improve cost per lead, and increase the percentage of leads that actually talk to your team and move toward a decision.
+                Axisphere combines Google Search, Performance Max, and Meta
+                campaigns with conversion-optimized landing pages to attract
+                decision-makers who are actively searching or evaluating
+                solutions. Every touchpoint—from ad copy to forms and
+                follow-ups—is designed to reduce waste, improve cost per lead,
+                and increase the percentage of leads that actually talk to your
+                team and move toward a decision.
               </p>
             </div>
 
@@ -139,7 +147,8 @@ export default function Performance() {
               What We Specialize In
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              We focus on the core levers that move numbers for real estate and fintech businesses in the USA.
+              We focus on the core levers that move numbers for real estate and
+              fintech businesses in the USA.
             </p>
           </div>
 

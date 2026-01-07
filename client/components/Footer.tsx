@@ -13,7 +13,8 @@ export default function Footer() {
               <span className="font-heading font-bold text-2xl">Axisphere</span>
             </Link>
             <p className="text-sm opacity-90">
-              Performance marketing and lead generation for USA real estate & fintech growth.
+              Performance marketing and lead generation for USA real estate &
+              fintech growth.
             </p>
           </div>
 
@@ -137,7 +138,14 @@ export default function Footer() {
         <div className="border-t border-opacity-20 border-accent pt-8">
           <div className="mb-6">
             <p className="text-sm opacity-90 mb-2">
-              <span className="font-semibold">Contact:</span> hello@axisphere.media | +1 (US Number) | <a href="#contact" className="hover:opacity-100 transition-opacity">Schedule a Call</a>
+              <span className="font-semibold">Contact:</span>{" "}
+              hello@axisphere.media | +1 (US Number) |{" "}
+              <a
+                href="#contact"
+                className="hover:opacity-100 transition-opacity"
+              >
+                Schedule a Call
+              </a>
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-80">

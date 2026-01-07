@@ -58,10 +58,17 @@ export default function About() {
                 About Axisphere
               </h2>
               <p className="text-lg opacity-90 leading-relaxed mb-4">
-                Axisphere is a performance marketing and lead generation partner for US real estate and fintech businesses that want predictable, trackable growth. Since 2022, our team has been running data-driven campaigns that focus on one thing: delivering qualified leads and conversations for your sales team.
+                Axisphere is a performance marketing and lead generation partner
+                for US real estate and fintech businesses that want predictable,
+                trackable growth. Since 2022, our team has been running
+                data-driven campaigns that focus on one thing: delivering
+                qualified leads and conversations for your sales team.
               </p>
               <p className="text-lg opacity-90 leading-relaxed">
-                With specialists across media buying, automation, design, and analytics, Axisphere combines creativity with rigor. Campaigns are built to be transparent, measurable, and tightly aligned with your business outcomes—not vanity metrics.
+                With specialists across media buying, automation, design, and
+                analytics, Axisphere combines creativity with rigor. Campaigns
+                are built to be transparent, measurable, and tightly aligned
+                with your business outcomes—not vanity metrics.
               </p>
             </div>
 
@@ -79,9 +86,7 @@ export default function About() {
                   <p className="font-semibold text-lg opacity-90 mb-1">
                     {stat.label}
                   </p>
-                  <p className="opacity-75 text-sm">
-                    {stat.sublabel}
-                  </p>
+                  <p className="opacity-75 text-sm">{stat.sublabel}</p>
                 </div>
               ))}
             </div>

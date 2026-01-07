@@ -93,7 +93,9 @@ export default function Services() {
             Industry Solutions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Specialized lead generation for US real estate and fintech businesses that depend on predictable, high-quality buyer enquiries and qualified demos.
+            Specialized lead generation for US real estate and fintech
+            businesses that depend on predictable, high-quality buyer enquiries
+            and qualified demos.
           </p>
         </div>
 

@@ -27,11 +27,15 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl opacity-90 max-w-lg leading-relaxed">
-              Performance-driven Google, Meta, and outbound campaigns to generate qualified leads, demos, and deals for your sales team.
+              Performance-driven Google, Meta, and outbound campaigns to
+              generate qualified leads, demos, and deals for your sales team.
             </p>
 
             <p className="text-base opacity-80 max-w-lg leading-relaxed">
-              From high-intent property buyer searches to compliant fintech demo funnels, Axisphere builds and runs AI-powered campaigns that deliver consistent, measurable results. Your goal is closing more deals. Ours is giving you the steady pipeline you need.
+              From high-intent property buyer searches to compliant fintech demo
+              funnels, Axisphere builds and runs AI-powered campaigns that
+              deliver consistent, measurable results. Your goal is closing more
+              deals. Ours is giving you the steady pipeline you need.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -83,12 +87,26 @@ export default function Hero() {
               <div className="relative h-full flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-48 h-48 mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-full h-full text-accent-foreground opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7H5v12h12V9m0-2h4v4m0 0l-4-4m4 4l-8 8" />
+                    <svg
+                      className="w-full h-full text-accent-foreground opacity-80"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M13 7H5v12h12V9m0-2h4v4m0 0l-4-4m4 4l-8 8"
+                      />
                     </svg>
                   </div>
-                  <p className="font-heading font-bold text-2xl">Lead Growth Engine</p>
-                  <p className="opacity-70 mt-2">Performance Marketing for Real Estate & Fintech</p>
+                  <p className="font-heading font-bold text-2xl">
+                    Lead Growth Engine
+                  </p>
+                  <p className="opacity-70 mt-2">
+                    Performance Marketing for Real Estate & Fintech
+                  </p>
                 </div>
               </div>
             </div>
