@@ -135,7 +135,7 @@ export default function Services() {
                 <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-heading font-semibold text-primary mb-3">
+                <h3 className="text-xl font-heading font-semibold text-accent-foreground mb-3">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
