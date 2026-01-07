@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openForm, setOpenForm] = useState<"project" | "call" | "plan" | null>(null);
 
   const handleGetStarted = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    setOpenForm("plan");
   };
 
   return (
@@ -143,6 +145,12 @@ export default function Header() {
           </div>
         )}
       </nav>
+
+      <ContactForm
+        isOpen={openForm !== null}
+        onOpenChange={(open) => setOpenForm(open ? openForm : null)}
+        type={(openForm || "project") as "project" | "call" | "plan"}
+      />
     </header>
   );
 }
