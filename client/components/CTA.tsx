@@ -58,7 +58,7 @@ export default function CTA() {
               ].map((company, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center p-6 bg-muted rounded-xl border border-border hover:border-primary/30 transition-colors animate-slide-up"
+                  className="flex items-center justify-center p-6 bg-muted rounded-xl border border-border hover:border-primary hover:shadow-lg shadow-sm transition-all duration-300 animate-slide-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <p className="font-semibold text-muted-foreground">
