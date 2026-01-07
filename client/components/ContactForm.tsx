@@ -15,7 +15,7 @@ import { toast } from "sonner";
 interface ContactFormProps {
   isOpen: boolean;
   onOpenChange: (open: boolean) => void;
-  type: "project" | "call";
+  type: "project" | "call" | "plan";
 }
 
 export default function ContactForm({
@@ -30,14 +30,25 @@ export default function ContactForm({
     message: "",
     date: "",
     time: "",
+    company: "",
+    industry: "",
+    budget: "",
+    timeline: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const isProjectForm = type === "project";
-  const title = isProjectForm ? "Start a Project" : "Schedule a Call";
+  const isPlanForm = type === "plan";
+  const title = isProjectForm
+    ? "Start a Project"
+    : isPlanForm
+      ? "Get Your 90-Day Plan"
+      : "Schedule a Call";
   const description = isProjectForm
     ? "Tell us about your project and let's discuss how we can help."
-    : "Let's schedule a time to discuss your needs.";
+    : isPlanForm
+      ? "Let's create a customized 90-day lead generation plan for your business."
+      : "Let's schedule a time to discuss your needs.";
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -60,7 +71,9 @@ export default function ContactForm({
       toast.success(
         isProjectForm
           ? "Project inquiry sent! We'll be in touch soon."
-          : "Call scheduled! We'll confirm the time shortly.",
+          : isPlanForm
+            ? "Plan request received! We'll create your customized 90-day plan soon."
+            : "Call scheduled! We'll confirm the time shortly.",
       );
 
       setFormData({
@@ -70,6 +83,10 @@ export default function ContactForm({
         message: "",
         date: "",
         time: "",
+        company: "",
+        industry: "",
+        budget: "",
+        timeline: "",
       });
       onOpenChange(false);
     } catch (error) {
@@ -127,7 +144,79 @@ export default function ContactForm({
             />
           </div>
 
-          {!isProjectForm && (
+          {isPlanForm && (
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="company">Company Name</Label>
+                  <Input
+                    id="company"
+                    name="company"
+                    placeholder="Your company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="industry">Industry</Label>
+                  <select
+                    id="industry"
+                    name="industry"
+                    value={formData.industry}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                  >
+                    <option value="">Select industry</option>
+                    <option value="real-estate">Real Estate</option>
+                    <option value="fintech">Fintech</option>
+                    <option value="saas">SaaS</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="budget">Monthly Budget</Label>
+                  <select
+                    id="budget"
+                    name="budget"
+                    value={formData.budget}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                  >
+                    <option value="">Select budget</option>
+                    <option value="5k-10k">$5K - $10K</option>
+                    <option value="10k-25k">$10K - $25K</option>
+                    <option value="25k-50k">$25K - $50K</option>
+                    <option value="50k+">$50K+</option>
+                  </select>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="timeline">Timeline</Label>
+                  <select
+                    id="timeline"
+                    name="timeline"
+                    value={formData.timeline}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                  >
+                    <option value="">Select timeline</option>
+                    <option value="immediate">Immediate (This week)</option>
+                    <option value="1-2-weeks">1-2 weeks</option>
+                    <option value="1-month">Within 1 month</option>
+                    <option value="exploring">Still exploring</option>
+                  </select>
+                </div>
+              </div>
+            </>
+          )}
+
+          {!isProjectForm && !isPlanForm && (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="date">Preferred Date</Label>
@@ -162,7 +251,9 @@ export default function ContactForm({
               placeholder={
                 isProjectForm
                   ? "Tell us about your project..."
-                  : "Any additional details..."
+                  : isPlanForm
+                    ? "What are your main goals for lead generation?"
+                    : "Any additional details..."
               }
               value={formData.message}
               onChange={handleChange}
