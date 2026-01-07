@@ -47,19 +47,19 @@ export default function About() {
 
             <div className="flex flex-col sm:flex-row gap-6 pt-4 text-sm">
               <div>
-                <p className="font-heading font-bold text-3xl text-accent">
+                <p className="font-heading font-bold text-3xl text-accent-foreground">
                   50+
                 </p>
                 <p className="opacity-80">Team Members</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-3xl text-accent">
+                <p className="font-heading font-bold text-3xl text-accent-foreground">
                   12
                 </p>
                 <p className="opacity-80">Awards Won</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-3xl text-accent">
+                <p className="font-heading font-bold text-3xl text-accent-foreground">
                   40+
                 </p>
                 <p className="opacity-80">Global Clients</p>
