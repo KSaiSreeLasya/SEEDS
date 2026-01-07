@@ -20,13 +20,13 @@ export default function CTA() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => setOpenForm("project")}
-                className="px-8 py-4 bg-accent text-accent-foreground font-heading font-bold rounded-lg hover:opacity-90 transition-opacity text-lg"
+                className="px-8 py-4 bg-accent-foreground text-white font-heading font-bold rounded-lg hover:opacity-90 transition-opacity text-lg"
               >
                 Start a Project
               </button>
               <button
                 onClick={() => setOpenForm("call")}
-                className="px-8 py-4 border-2 border-accent bg-transparent text-accent font-heading font-bold rounded-lg hover:bg-accent hover:text-accent-foreground transition-all text-lg"
+                className="px-8 py-4 border-2 border-accent-foreground bg-transparent text-accent-foreground font-heading font-bold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-lg"
               >
                 Schedule a Call
               </button>
@@ -39,7 +39,7 @@ export default function CTA() {
               <p className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-2">
                 Trusted by leading brands
               </p>
-              <h3 className="text-2xl font-heading font-bold text-primary">
+              <h3 className="text-2xl font-heading font-bold text-foreground">
                 Companies we've worked with
               </h3>
             </div>

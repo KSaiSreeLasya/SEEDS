@@ -13,7 +13,7 @@ export default function Footer() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F07ba826074254d3191a55ee32e800a58%2F9a5617e61447487cab49264f51c9bfde?format=webp&width=800"
                 alt="Holographic Sphere Logo"
-                className="w-10 h-10 rounded-lg object-cover"
+                className="w-16 h-16 rounded-lg object-cover"
               />
               <span className="font-heading font-bold text-lg">Seed</span>
             </Link>

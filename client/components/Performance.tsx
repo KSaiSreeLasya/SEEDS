@@ -50,7 +50,7 @@ export default function Performance() {
             </div>
 
             <div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-accent-foreground mb-6">
                 Performance Marketing Specialists
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -66,10 +66,10 @@ export default function Performance() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3 bg-primary text-primary-foreground font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center">
+              <button className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center">
                 View Case Studies
               </button>
-              <button className="px-8 py-3 border-2 border-primary text-primary font-heading font-semibold rounded-lg hover:bg-primary hover:text-primary-foreground transition-all text-center">
+              <button className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-center">
                 Get Performance Audit
               </button>
             </div>
@@ -80,13 +80,13 @@ export default function Performance() {
             {specialists.map((item, index) => (
               <div
                 key={index}
-                className="p-6 bg-muted rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300 animate-slide-up"
+                className="p-6 bg-muted rounded-2xl border border-border hover:border-accent-foreground hover:shadow-lg transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <p className="text-4xl font-heading font-bold text-primary mb-2">
+                <p className="text-4xl font-heading font-bold text-accent-foreground mb-2">
                   {item.metric}
                 </p>
-                <h3 className="text-lg font-heading font-semibold text-primary mb-3">
+                <h3 className="text-lg font-heading font-semibold text-accent-foreground mb-3">
                   {item.label}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -100,7 +100,7 @@ export default function Performance() {
         {/* Performance Specialties */}
         <div className="mt-16 md:mt-24 pt-16 md:pt-24 border-t border-border">
           <div className="mb-12 animate-slide-up">
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-accent-foreground mb-4">
               Performance Specialists
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl">
@@ -202,7 +202,7 @@ export default function Performance() {
                       {specialty.icon}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-2">
+                      <h4 className="text-lg md:text-xl font-heading font-semibold text-accent-foreground mb-2">
                         {specialty.title}
                       </h4>
                       <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
@@ -213,7 +213,7 @@ export default function Performance() {
 
                   {isExpanded && (
                     <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
-                      <h5 className="font-semibold text-primary text-sm">
+                      <h5 className="font-semibold text-accent-foreground text-sm">
                         Our Approach:
                       </h5>
                       <ul className="space-y-2">
@@ -222,8 +222,8 @@ export default function Performance() {
                             key={idx}
                             className="flex items-start gap-2 text-sm text-muted-foreground"
                           >
-                            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 mt-0.5">
-                              <span className="text-xs font-semibold text-primary">
+                            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-accent/10 flex-shrink-0 mt-0.5">
+                              <span className="text-xs font-semibold text-accent-foreground">
                                 •
                               </span>
                             </span>
@@ -245,7 +245,7 @@ export default function Performance() {
                       className="w-8 h-8 rounded bg-accent flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
                     >
                       <svg
-                        className={`w-5 h-5 text-primary transition-transform ${isExpanded ? "rotate-45" : ""}`}
+                        className={`w-5 h-5 text-accent-foreground transition-transform ${isExpanded ? "rotate-45" : ""}`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

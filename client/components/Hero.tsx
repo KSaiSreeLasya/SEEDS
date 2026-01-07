@@ -34,33 +34,35 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button
                 onClick={handleGetStarted}
-                className="px-8 py-3 bg-accent text-accent-foreground font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center"
+                className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center"
               >
                 Get Started
               </button>
               <button
                 onClick={handleLearnMore}
-                className="px-8 py-3 border-2 border-accent text-accent font-heading font-semibold rounded-lg hover:bg-accent hover:text-accent-foreground transition-all text-center"
+                className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-center"
               >
                 Learn More
               </button>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-6 pt-4 text-sm opacity-80">
+            <div className="flex flex-col sm:flex-row gap-6 pt-4 text-sm opacity-90">
               <div>
-                <p className="font-heading font-bold text-lg text-accent">
+                <p className="font-heading font-bold text-lg text-accent-foreground">
                   150+
                 </p>
                 <p>Projects Completed</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-lg text-accent">
+                <p className="font-heading font-bold text-lg text-accent-foreground">
                   98%
                 </p>
                 <p>Client Satisfaction</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-lg text-accent">5+</p>
+                <p className="font-heading font-bold text-lg text-accent-foreground">
+                  5+
+                </p>
                 <p>Years Experience</p>
               </div>
             </div>

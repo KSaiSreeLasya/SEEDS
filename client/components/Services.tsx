@@ -113,7 +113,7 @@ export default function Services() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16 md:mb-24 animate-slide-up">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-accent-foreground mb-4">
             Industry Solutions
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -135,7 +135,7 @@ export default function Services() {
                 <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-heading font-semibold text-primary mb-3">
+                <h3 className="text-xl font-heading font-semibold text-accent-foreground mb-3">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -144,7 +144,7 @@ export default function Services() {
 
                 {isExpanded && (
                   <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
-                    <h4 className="font-semibold text-primary text-sm">
+                    <h4 className="font-semibold text-accent-foreground text-sm">
                       Key Features:
                     </h4>
                     <ul className="space-y-2">
@@ -153,8 +153,8 @@ export default function Services() {
                           key={idx}
                           className="flex items-start gap-2 text-sm text-muted-foreground"
                         >
-                          <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 mt-0.5">
-                            <span className="text-xs font-semibold text-primary">
+                          <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-accent/10 flex-shrink-0 mt-0.5">
+                            <span className="text-xs font-semibold text-accent-foreground">
                               ✓
                             </span>
                           </span>
@@ -167,7 +167,7 @@ export default function Services() {
 
                 <button
                   onClick={() => toggleService(service.title)}
-                  className="mt-4 inline-flex items-center gap-2 text-primary font-semibold hover:opacity-70 transition-opacity cursor-pointer"
+                  className="mt-4 inline-flex items-center gap-2 text-accent-foreground font-semibold hover:opacity-70 transition-opacity cursor-pointer"
                 >
                   {isExpanded ? "Show less" : "Learn more"}
                   <svg
