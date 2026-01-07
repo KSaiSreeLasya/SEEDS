@@ -80,38 +80,49 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Visual */}
+          {/* Visual - Growth Chart & Funnel */}
           <div
             className="relative h-96 md:h-full min-h-96 animate-slide-up flex items-center justify-center"
             style={{ animationDelay: "0.1s" }}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-secondary to-transparent rounded-3xl opacity-20"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-purple-500/10 to-transparent rounded-3xl"></div>
             <div className="absolute inset-0 rounded-3xl overflow-hidden">
-              <div className="absolute top-10 right-10 w-32 h-32 bg-secondary rounded-full opacity-20 animate-pulse"></div>
-              <div className="absolute bottom-20 left-10 w-40 h-40 bg-accent rounded-full opacity-10 animate-pulse"></div>
-              <div className="relative h-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-48 h-48 mx-auto mb-4 flex items-center justify-center">
-                    <svg
-                      className="w-full h-full text-accent-foreground opacity-80"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M13 7H5v12h12V9m0-2h4v4m0 0l-4-4m4 4l-8 8"
-                      />
-                    </svg>
+              {/* Animated background elements */}
+              <div className="absolute top-10 right-10 w-32 h-32 bg-secondary rounded-full opacity-15 animate-pulse blur-xl"></div>
+              <div className="absolute bottom-20 left-10 w-40 h-40 bg-accent rounded-full opacity-10 animate-pulse blur-2xl"></div>
+              <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-accent-foreground rounded-full opacity-5 animate-pulse"></div>
+
+              <div className="relative h-full flex items-center justify-center p-6">
+                <div className="space-y-6">
+                  {/* Growth Chart */}
+                  <div className="flex items-end justify-center gap-3">
+                    <div className="flex flex-col items-center">
+                      <div className="w-8 h-16 bg-gradient-to-t from-secondary to-secondary/50 rounded-t-lg shadow-lg"></div>
+                      <span className="text-xs text-accent-foreground mt-2 font-semibold">Week 1</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <div className="w-8 h-24 bg-gradient-to-t from-secondary to-secondary/50 rounded-t-lg shadow-lg"></div>
+                      <span className="text-xs text-accent-foreground mt-2 font-semibold">Week 2</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <div className="w-8 h-32 bg-gradient-to-t from-accent-foreground to-secondary rounded-t-lg shadow-lg"></div>
+                      <span className="text-xs text-accent-foreground mt-2 font-semibold">Week 3</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                      <div className="w-8 h-40 bg-gradient-to-t from-accent-foreground to-accent-foreground/70 rounded-t-lg shadow-lg animate-pulse"></div>
+                      <span className="text-xs text-accent-foreground mt-2 font-semibold">Week 4</span>
+                    </div>
                   </div>
-                  <p className="font-heading font-bold text-2xl">
-                    Lead Growth Engine
-                  </p>
-                  <p className="opacity-70 mt-2">
-                    Performance Marketing for Real Estate & Fintech
-                  </p>
+
+                  {/* Label */}
+                  <div className="text-center">
+                    <p className="font-heading font-bold text-2xl text-accent-foreground">
+                      Lead Growth Engine
+                    </p>
+                    <p className="opacity-70 mt-2 text-sm">
+                      Predictable, Measurable Growth
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
