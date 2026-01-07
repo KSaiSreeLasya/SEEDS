@@ -167,7 +167,7 @@ export default function Services() {
 
                 <button
                   onClick={() => toggleService(service.title)}
-                  className="mt-4 inline-flex items-center gap-2 text-primary font-semibold hover:opacity-70 transition-opacity cursor-pointer"
+                  className="mt-4 inline-flex items-center gap-2 text-accent-foreground font-semibold hover:opacity-70 transition-opacity cursor-pointer"
                 >
                   {isExpanded ? "Show less" : "Learn more"}
                   <svg
