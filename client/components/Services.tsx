@@ -153,8 +153,8 @@ export default function Services() {
                           key={idx}
                           className="flex items-start gap-2 text-sm text-muted-foreground"
                         >
-                          <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 mt-0.5">
-                            <span className="text-xs font-semibold text-primary">
+                          <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-accent/10 flex-shrink-0 mt-0.5">
+                            <span className="text-xs font-semibold text-accent-foreground">
                               ✓
                             </span>
                           </span>
