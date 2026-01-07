@@ -66,10 +66,10 @@ export default function Performance() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3 bg-primary text-primary-foreground font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center">
+              <button className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center">
                 View Case Studies
               </button>
-              <button className="px-8 py-3 border-2 border-primary text-primary font-heading font-semibold rounded-lg hover:bg-primary hover:text-primary-foreground transition-all text-center">
+              <button className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-center">
                 Get Performance Audit
               </button>
             </div>
