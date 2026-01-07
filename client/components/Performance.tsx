@@ -100,7 +100,7 @@ export default function Performance() {
         {/* Performance Specialties */}
         <div className="mt-16 md:mt-24 pt-16 md:pt-24 border-t border-border">
           <div className="mb-12 animate-slide-up">
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-4">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-accent-foreground mb-4">
               Performance Specialists
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl">
