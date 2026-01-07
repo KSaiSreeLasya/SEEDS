@@ -59,7 +59,7 @@ export default function About() {
               </h2>
               <p className="text-lg opacity-90 leading-relaxed mb-4">
                 Axisphere is a performance marketing and lead generation partner
-                for US real estate and fintech businesses that want predictable,
+                for US <span className="whitespace-nowrap">real estate</span> and <span className="whitespace-nowrap">fintech</span> businesses that want predictable,
                 trackable growth. Since 2022, our team has been running
                 data-driven campaigns that focus on one thing: delivering
                 qualified leads and conversations for your sales team.
@@ -77,7 +77,7 @@ export default function About() {
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="animate-slide-up"
+                  className="animate-slide-up p-4 rounded-lg bg-accent/5 border border-accent/20"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <p className="font-heading font-bold text-3xl text-accent-foreground mb-1">
@@ -97,7 +97,7 @@ export default function About() {
             {valuePillars.map((pillar, index) => (
               <div
                 key={index}
-                className="p-6 bg-accent rounded-2xl border border-accent animate-slide-up"
+                className="p-6 bg-accent rounded-2xl border border-accent shadow-md hover:shadow-lg transition-shadow animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="text-4xl mb-3">{pillar.icon}</div>
