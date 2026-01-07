@@ -34,7 +34,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button
                 onClick={handleGetStarted}
-                className="px-8 py-3 bg-accent text-accent-foreground font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center"
+                className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center"
               >
                 Get Started
               </button>
