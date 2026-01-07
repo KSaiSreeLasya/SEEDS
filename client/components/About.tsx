@@ -47,9 +47,12 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-16 md:py-24 lg:py-32 bg-primary text-primary-foreground"
+      className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-primary via-primary to-primary/80 text-primary-foreground relative overflow-hidden"
     >
-      <div className="container mx-auto px-4">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl -z-10"></div>
+      <div className="container mx-auto px-4 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Content */}
           <div className="space-y-8 animate-slide-up">
@@ -59,10 +62,12 @@ export default function About() {
               </h2>
               <p className="text-lg opacity-90 leading-relaxed mb-4">
                 Axisphere is a performance marketing and lead generation partner
-                for US real estate and fintech businesses that want predictable,
-                trackable growth. Since 2022, our team has been running
-                data-driven campaigns that focus on one thing: delivering
-                qualified leads and conversations for your sales team.
+                for US <span className="whitespace-nowrap">real estate</span>{" "}
+                and <span className="whitespace-nowrap">fintech</span>{" "}
+                businesses that want predictable, trackable growth. Since 2022,
+                our team has been running data-driven campaigns that focus on
+                one thing: delivering qualified leads and conversations for your
+                sales team.
               </p>
               <p className="text-lg opacity-90 leading-relaxed">
                 With specialists across media buying, automation, design, and
@@ -77,7 +82,7 @@ export default function About() {
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="animate-slide-up"
+                  className="animate-slide-up p-4 rounded-lg bg-accent/5 border border-accent/20"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <p className="font-heading font-bold text-3xl text-accent-foreground mb-1">
@@ -97,14 +102,16 @@ export default function About() {
             {valuePillars.map((pillar, index) => (
               <div
                 key={index}
-                className="p-6 bg-accent rounded-2xl border border-accent animate-slide-up"
+                className="p-6 bg-primary-foreground/10 rounded-2xl border border-primary-foreground/20 shadow-md hover:shadow-lg hover:bg-primary-foreground/20 transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-4xl mb-3">{pillar.icon}</div>
-                <h3 className="text-lg font-heading font-semibold text-accent-foreground mb-2">
+                <div className="w-12 h-12 flex items-center justify-center bg-secondary/20 rounded-xl text-2xl mb-3">
+                  {pillar.icon}
+                </div>
+                <h3 className="text-lg font-heading font-semibold text-primary-foreground mb-2">
                   {pillar.title}
                 </h3>
-                <p className="text-accent-foreground opacity-90 text-sm leading-relaxed">
+                <p className="text-primary-foreground/80 text-sm leading-relaxed">
                   {pillar.description}
                 </p>
               </div>

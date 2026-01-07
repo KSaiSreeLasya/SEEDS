@@ -168,3 +168,32 @@
     @apply text-primary hover:opacity-80 transition-opacity;
   }
 }
+
+/* Custom gradient backgrounds for enhanced design */
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-foreground via-secondary to-accent-foreground bg-clip-text text-transparent;
+  }
+
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-lg;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:scale-105;
+  }
+
+  .btn-glow {
+    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Selection color matching brand */
+  ::selection {
+    @apply bg-accent-foreground text-primary-foreground;
+  }
+}

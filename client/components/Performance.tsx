@@ -74,16 +74,20 @@ export default function Performance() {
   ];
 
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-background">
-      <div className="container mx-auto px-4">
+    <section className="py-16 md:py-24 lg:py-32 bg-background relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl -z-10"></div>
+
+      <div className="container mx-auto px-4 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-8 animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary rounded-full">
-              <span className="text-primary-foreground font-semibold text-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-secondary/20 to-accent/20 rounded-full border border-secondary/30 shadow-lg hover:shadow-xl transition-shadow">
+              <span className="text-accent-foreground font-semibold text-sm">
                 ⚡ Performance
               </span>
-              <span className="text-sm text-primary-foreground">
+              <span className="text-sm text-accent-foreground font-medium">
                 Lead Generation Excellence
               </span>
             </div>
@@ -109,10 +113,10 @@ export default function Performance() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center">
+              <button className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 shadow-lg hover:shadow-xl transition-all text-center">
                 View Sample Funnels
               </button>
-              <button className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-center">
+              <button className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white hover:shadow-lg transition-all text-center">
                 Get Free Account Audit
               </button>
             </div>
@@ -123,10 +127,10 @@ export default function Performance() {
             {metrics.map((item, index) => (
               <div
                 key={index}
-                className="p-6 bg-muted rounded-2xl border border-border hover:border-accent-foreground hover:shadow-lg transition-all duration-300 animate-slide-up"
+                className="p-6 bg-gradient-to-br from-muted to-muted/50 rounded-2xl border border-border hover:border-accent-foreground hover:shadow-lg hover:from-muted hover:to-accent/5 shadow-md transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <p className="text-4xl font-heading font-bold text-accent-foreground mb-2">
+                <p className="text-4xl font-heading font-bold bg-gradient-to-r from-accent-foreground to-secondary bg-clip-text text-transparent mb-2">
                   {item.metric}
                 </p>
                 <h3 className="text-lg font-heading font-semibold text-accent-foreground mb-3">
@@ -147,8 +151,10 @@ export default function Performance() {
               What We Specialize In
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              We focus on the core levers that move numbers for real estate and
-              fintech businesses in the USA.
+              We focus on the core levers that move numbers for{" "}
+              <span className="whitespace-nowrap">real estate</span> and
+              <span className="whitespace-nowrap">fintech</span> businesses in
+              the USA.
             </p>
           </div>
 
@@ -158,11 +164,11 @@ export default function Performance() {
               return (
                 <div
                   key={index}
-                  className="p-6 md:p-8 bg-muted rounded-2xl border border-border hover:shadow-lg hover:border-primary transition-all duration-300 animate-slide-up"
+                  className="p-6 md:p-8 bg-gradient-to-br from-muted to-muted/50 rounded-2xl border border-border hover:shadow-lg hover:border-secondary hover:from-muted hover:to-secondary/5 shadow-md transition-all duration-300 animate-slide-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex gap-6">
-                    <div className="flex-shrink-0 text-4xl mt-1">
+                    <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-secondary/20 to-accent/20 rounded-xl text-2xl">
                       {specialty.icon}
                     </div>
                     <div className="flex-1 min-w-0">

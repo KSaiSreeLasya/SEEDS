@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openForm, setOpenForm] = useState<"project" | "call" | "plan" | null>(
+    null,
+  );
 
   const handleGetStarted = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    setOpenForm("plan");
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-background border-b border-border">
+    <header className="sticky top-0 z-50 bg-background border-b border-border shadow-md backdrop-blur-sm bg-background/95">
       <nav className="container mx-auto px-4 py-4 lg:py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -57,7 +61,7 @@ export default function Header() {
           <div className="hidden sm:flex items-center gap-4">
             <button
               onClick={handleGetStarted}
-              className="px-6 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
+              className="px-6 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 shadow-lg hover:shadow-xl transition-all font-heading"
             >
               Get My 90-Day Plan
             </button>
@@ -136,13 +140,19 @@ export default function Header() {
                 handleGetStarted();
                 setIsMobileMenuOpen(false);
               }}
-              className="w-full px-4 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 transition-opacity font-heading"
+              className="w-full px-4 py-2.5 bg-primary text-primary-foreground font-semibold rounded-md hover:opacity-90 shadow-lg hover:shadow-xl transition-all font-heading"
             >
               Get My 90-Day Plan
             </button>
           </div>
         )}
       </nav>
+
+      <ContactForm
+        isOpen={openForm !== null}
+        onOpenChange={(open) => setOpenForm(open ? openForm : null)}
+        type={(openForm || "project") as "project" | "call" | "plan"}
+      />
     </header>
   );
 }
