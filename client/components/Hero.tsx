@@ -60,7 +60,9 @@ export default function Hero() {
                 <p>Client Satisfaction</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-lg text-accent-foreground">5+</p>
+                <p className="font-heading font-bold text-lg text-accent-foreground">
+                  5+
+                </p>
                 <p>Years Experience</p>
               </div>
             </div>
