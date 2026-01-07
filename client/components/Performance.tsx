@@ -202,7 +202,7 @@ export default function Performance() {
                       {specialty.icon}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-2">
+                      <h4 className="text-lg md:text-xl font-heading font-semibold text-accent-foreground mb-2">
                         {specialty.title}
                       </h4>
                       <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
