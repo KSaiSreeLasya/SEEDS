@@ -144,7 +144,7 @@ export default function Services() {
 
                 {isExpanded && (
                   <div className="mt-6 pt-6 border-t border-border space-y-3 animate-slide-up">
-                    <h4 className="font-semibold text-primary text-sm">
+                    <h4 className="font-semibold text-accent-foreground text-sm">
                       Key Features:
                     </h4>
                     <ul className="space-y-2">
