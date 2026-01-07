@@ -92,8 +92,8 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-accent-foreground mb-4">
             Industry Solutions
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Specialized lead generation for US real estate and fintech
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Specialized lead generation for US <span className="whitespace-nowrap">real estate</span> and <span className="whitespace-nowrap">fintech</span>
             businesses that depend on predictable, high-quality buyer enquiries
             and qualified demos.
           </p>
@@ -106,7 +106,7 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="group p-8 bg-card rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-border animate-slide-up"
+                className="group p-8 bg-card rounded-2xl shadow-md hover:shadow-2xl hover:border-accent-foreground/50 transition-all duration-300 border border-border animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
