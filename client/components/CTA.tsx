@@ -11,26 +11,28 @@ export default function CTA() {
           {/* Main CTA */}
           <div className="bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-8 md:p-16 text-center text-primary-foreground animate-slide-up">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
-              Ready to transform your digital presence?
+              Ready to Launch Your 90-Day Lead Engine?
             </h2>
             <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-8">
-              Let's work together to create something amazing. Get in touch
-              today and let's discuss your project.
+              If you're a US real estate or fintech business that wants consistent, measurable buyer and prospect enquiries, let's design the right funnel for your market and business model.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <button
                 onClick={() => setOpenForm("project")}
                 className="px-8 py-4 bg-accent-foreground text-white font-heading font-bold rounded-lg hover:opacity-90 transition-opacity text-lg"
               >
-                Start a Project
+                Start a 90-Day Program
               </button>
               <button
                 onClick={() => setOpenForm("call")}
                 className="px-8 py-4 border-2 border-accent-foreground bg-transparent text-accent-foreground font-heading font-bold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-lg"
               >
-                Schedule a Call
+                Schedule a Discovery Call
               </button>
             </div>
+            <p className="text-sm opacity-80">
+              No long-term lock-in. Month-to-month engagement starting immediately after strategy phase.
+            </p>
           </div>
 
           {/* Trust Section */}
