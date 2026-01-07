@@ -89,6 +89,9 @@ export default function Services() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24 animate-slide-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full border border-secondary/20 mb-4">
+            <span className="text-secondary font-semibold text-sm">✨ Solutions</span>
+          </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-accent-foreground mb-4">
             Industry Solutions
           </h2>
@@ -106,11 +109,11 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="group p-8 bg-card rounded-2xl shadow-md hover:shadow-2xl hover:border-accent-foreground/50 transition-all duration-300 border border-border animate-slide-up"
+                className="group p-8 bg-gradient-to-br from-card to-card/50 rounded-2xl shadow-md hover:shadow-2xl hover:border-accent-foreground/50 hover:from-card hover:to-accent/10 transition-all duration-300 border border-border animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {solution.icon}
+                <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-secondary/20 to-accent/20 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-3xl">{solution.icon}</span>
                 </div>
                 <h3 className="text-lg font-heading font-semibold text-accent-foreground mb-3">
                   {solution.title}
