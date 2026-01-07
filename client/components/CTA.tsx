@@ -20,7 +20,7 @@ export default function CTA() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <button
-                onClick={() => setOpenForm("project")}
+                onClick={() => setOpenForm("plan")}
                 className="px-8 py-4 bg-accent-foreground text-white font-heading font-bold rounded-lg hover:opacity-90 shadow-lg hover:shadow-xl transition-all text-lg"
               >
                 Start a 90-Day Program
