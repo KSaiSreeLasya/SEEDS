@@ -5,8 +5,12 @@ export default function CTA() {
   const [openForm, setOpenForm] = useState<"project" | "call" | "plan" | null>(null);
 
   return (
-    <section id="contact" className="py-16 md:py-24 lg:py-32 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-16 md:py-24 lg:py-32 bg-background relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl -z-10"></div>
+
+      <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto">
           {/* Main CTA */}
           <div className="bg-gradient-to-br from-primary to-primary/80 rounded-3xl p-8 md:p-16 text-center text-primary-foreground animate-slide-up shadow-2xl hover:shadow-3xl transition-shadow">
@@ -41,9 +45,9 @@ export default function CTA() {
           {/* Trust Section */}
           <div className="mt-16 pt-16 border-t border-border">
             <div className="text-center mb-12 animate-slide-up">
-              <p className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-2">
-                Trusted by leading brands
-              </p>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full border border-secondary/20 mb-4">
+                <span className="text-secondary font-semibold text-sm">⭐ Trusted</span>
+              </div>
               <h3 className="text-2xl font-heading font-bold text-foreground">
                 Leading <span className="whitespace-nowrap">Real Estate & Fintech</span> Companies
               </h3>
@@ -58,7 +62,7 @@ export default function CTA() {
               ].map((company, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center p-6 bg-muted rounded-xl border border-border hover:border-primary hover:shadow-lg shadow-sm transition-all duration-300 animate-slide-up"
+                  className="flex items-center justify-center p-6 bg-gradient-to-br from-muted to-muted/50 rounded-xl border border-border hover:border-secondary hover:shadow-lg hover:from-muted hover:to-secondary/5 shadow-sm transition-all duration-300 animate-slide-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <p className="font-semibold text-muted-foreground">
