@@ -40,7 +40,7 @@ export default function Hero() {
               </button>
               <button
                 onClick={handleLearnMore}
-                className="px-8 py-3 border-2 border-accent text-accent font-heading font-semibold rounded-lg hover:bg-accent hover:text-accent-foreground transition-all text-center"
+                className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-center"
               >
                 Learn More
               </button>
