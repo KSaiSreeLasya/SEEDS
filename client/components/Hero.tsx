@@ -13,17 +13,17 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-6 animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-accent rounded-full">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full shadow-lg hover:shadow-xl transition-shadow">
               <span className="text-accent-foreground font-semibold text-sm">
                 ✨ New
               </span>
-              <span className="text-accent-foreground text-sm">
+              <span className="text-accent-foreground text-sm font-medium">
                 90-Day Acquisition Program
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight">
-              90-Day Lead Engine for US Real Estate & Fintech
+              90-Day Lead Engine for US <span className="whitespace-nowrap">Real Estate & Fintech</span>
             </h1>
 
             <p className="text-lg md:text-xl opacity-90 max-w-lg leading-relaxed">
@@ -38,35 +38,35 @@ export default function Hero() {
               deals. Ours is giving you the steady pipeline you need.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <button
                 onClick={handleGetStarted}
-                className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 transition-opacity text-center"
+                className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 shadow-lg hover:shadow-xl transition-all text-center"
               >
                 Get My 90-Day Plan
               </button>
               <button
                 onClick={handleSpecialist}
-                className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white transition-all text-center"
+                className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white hover:shadow-lg transition-all text-center"
               >
                 Talk to a Specialist
               </button>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-6 pt-4 text-sm opacity-90">
-              <div>
+            <div className="flex flex-col sm:flex-row gap-8 pt-6 text-sm opacity-90">
+              <div className="flex-1 p-4 rounded-lg bg-accent/5 border border-accent/20">
                 <p className="font-heading font-bold text-lg text-accent-foreground">
                   150+
                 </p>
-                <p>Real Estate & Fintech Campaigns</p>
+                <p className="whitespace-nowrap"><span className="whitespace-nowrap">Real Estate & Fintech</span> Campaigns</p>
               </div>
-              <div>
+              <div className="flex-1 p-4 rounded-lg bg-accent/5 border border-accent/20">
                 <p className="font-heading font-bold text-lg text-accent-foreground">
                   98%
                 </p>
                 <p>Active Client Retention</p>
               </div>
-              <div>
+              <div className="flex-1 p-4 rounded-lg bg-accent/5 border border-accent/20">
                 <p className="font-heading font-bold text-lg text-accent-foreground">
                   2,000+
                 </p>
