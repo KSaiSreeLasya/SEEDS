@@ -46,21 +46,21 @@ export default function Hero() {
               </button>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-6 pt-4 text-sm opacity-80">
+            <div className="flex flex-col sm:flex-row gap-6 pt-4 text-sm opacity-90">
               <div>
-                <p className="font-heading font-bold text-lg text-accent">
+                <p className="font-heading font-bold text-lg text-accent-foreground">
                   150+
                 </p>
                 <p>Projects Completed</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-lg text-accent">
+                <p className="font-heading font-bold text-lg text-accent-foreground">
                   98%
                 </p>
                 <p>Client Satisfaction</p>
               </div>
               <div>
-                <p className="font-heading font-bold text-lg text-accent">5+</p>
+                <p className="font-heading font-bold text-lg text-accent-foreground">5+</p>
                 <p>Years Experience</p>
               </div>
             </div>
