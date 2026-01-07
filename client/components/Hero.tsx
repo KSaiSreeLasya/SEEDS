@@ -1,6 +1,11 @@
+import { useState } from "react";
+import ContactForm from "./ContactForm";
+
 export default function Hero() {
+  const [openForm, setOpenForm] = useState<"project" | "call" | "plan" | null>(null);
+
   const handleGetStarted = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    setOpenForm("plan");
   };
 
   const handleSpecialist = () => {
@@ -113,6 +118,12 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <ContactForm
+        isOpen={openForm !== null}
+        onOpenChange={(open) => setOpenForm(open ? openForm : null)}
+        type={(openForm || "project") as "project" | "call" | "plan"}
+      />
     </section>
   );
 }
