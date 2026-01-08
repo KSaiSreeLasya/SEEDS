@@ -87,7 +87,7 @@ export default function Footer() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   LinkedIn
                 </a>
@@ -97,7 +97,7 @@ export default function Footer() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Instagram
                 </a>
@@ -107,7 +107,7 @@ export default function Footer() {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Twitter
                 </a>
@@ -124,7 +124,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/privacy-policy"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Privacy Policy
                 </Link>
@@ -132,7 +132,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/terms-conditions"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Terms & Conditions
                 </Link>
@@ -140,7 +140,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Cookie Policy
                 </a>
