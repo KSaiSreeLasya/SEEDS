@@ -27,10 +27,10 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Product */}
+          {/* Links */}
           <div>
             <h3 className="font-heading font-semibold text-sm uppercase tracking-wider mb-4">
-              Product
+              Links
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -54,15 +54,23 @@ export default function Footer() {
                   href="#solutions"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  90-Day Program
+                  Solutions
                 </a>
               </li>
               <li>
                 <a
-                  href="#solutions"
+                  href="#contact"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Solutions
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="opacity-80 hover:opacity-100 transition-opacity"
+                >
+                  About
                 </a>
               </li>
             </ul>
