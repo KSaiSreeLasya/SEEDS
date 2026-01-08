@@ -36,7 +36,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Home
                 </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Services
                 </a>
@@ -52,7 +52,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#solutions"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Solutions
                 </a>
@@ -60,7 +60,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Contact
                 </a>
@@ -68,7 +68,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#about"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   About
                 </a>
