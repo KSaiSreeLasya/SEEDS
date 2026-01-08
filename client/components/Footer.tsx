@@ -170,7 +170,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-100 transition-opacity font-medium"
+                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
               >
                 Twitter
               </a>
@@ -178,7 +178,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-100 transition-opacity font-medium"
+                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
               >
                 LinkedIn
               </a>
@@ -186,7 +186,7 @@ export default function Footer() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-100 transition-opacity font-medium"
+                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
               >
                 GitHub
               </a>
