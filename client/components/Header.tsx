@@ -18,9 +18,11 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <span className="font-heading font-bold text-2xl text-primary">
-              Axisphere
-            </span>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F4fd56084edeb4b5e849c2c5dd9a552d1?format=webp&width=800"
+              alt="Axisphere Logo"
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
