@@ -57,7 +57,7 @@ export default function Footer() {
                   Solutions
                 </a>
               </li>
-              
+
               <li>
                 <a
                   href="#about"
@@ -154,7 +154,8 @@ export default function Footer() {
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="mb-6 space-y-2">
             <p className="text-sm opacity-100">
-              <span className="font-semibold">Contact:</span> hello@axisphere.media
+              <span className="font-semibold">Contact:</span>{" "}
+              hello@axisphere.media
             </p>
             <p className="text-sm opacity-100">
               <span className="font-semibold">USA:</span>{" "}
