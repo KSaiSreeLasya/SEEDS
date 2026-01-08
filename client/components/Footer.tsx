@@ -84,34 +84,32 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="#"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Blog & Insights
+                  LinkedIn
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Case Studies
+                  Instagram
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Guides & Playbooks
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
-                >
-                  Support
+                  Twitter
                 </a>
               </li>
             </ul>
