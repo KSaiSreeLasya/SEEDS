@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function TermsConditions() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Header spacing */}
-      <div className="pt-20"></div>
+      <Header />
 
       <div className="container mx-auto px-4 py-12 md:py-16 max-w-3xl">
         <Link to="/" className="text-primary hover:text-secondary mb-6 inline-block">
