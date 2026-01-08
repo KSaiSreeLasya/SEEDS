@@ -124,20 +124,20 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/privacy-policy"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/terms-conditions"
                   className="opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Terms of Service
-                </a>
+                  Terms & Conditions
+                </Link>
               </li>
               <li>
                 <a
