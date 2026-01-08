@@ -36,7 +36,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Home
                 </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Services
                 </a>
@@ -52,25 +52,26 @@ export default function Footer() {
               <li>
                 <a
                   href="#solutions"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Solutions
+                </a>
+              </li>
+              
+              <li>
+                <a
+                  href="#about"
+                  className="text-black hover:text-black/80 transition-colors"
+                >
+                  About
                 </a>
               </li>
               <li>
                 <a
                   href="#contact"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
-                >
-                  About
                 </a>
               </li>
             </ul>
@@ -87,7 +88,7 @@ export default function Footer() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   LinkedIn
                 </a>
@@ -97,7 +98,7 @@ export default function Footer() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Instagram
                 </a>
@@ -107,7 +108,7 @@ export default function Footer() {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Twitter
                 </a>
@@ -124,7 +125,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/privacy-policy"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -132,7 +133,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/terms-conditions"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Terms & Conditions
                 </Link>
@@ -140,7 +141,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Cookie Policy
                 </a>
@@ -157,7 +158,7 @@ export default function Footer() {
               hello@axisphere.media | +1 (US Number) |{" "}
               <a
                 href="#contact"
-                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
+                className="text-black hover:text-black/80 transition-colors"
               >
                 Schedule a Call
               </a>
@@ -170,7 +171,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
+                className="text-black hover:text-black/80 transition-colors"
               >
                 Twitter
               </a>
@@ -178,7 +179,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
+                className="text-black hover:text-black/80 transition-colors"
               >
                 LinkedIn
               </a>
@@ -186,7 +187,7 @@ export default function Footer() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
+                className="text-black hover:text-black/80 transition-colors"
               >
                 GitHub
               </a>
