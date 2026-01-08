@@ -14,10 +14,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-secondary/30 rounded-lg flex items-center justify-center">
-                <span className="font-heading font-bold text-lg">A</span>
-              </div>
-              <span className="font-heading font-bold text-xl">Axisphere</span>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F4fd56084edeb4b5e849c2c5dd9a552d1?format=webp&width=800"
+                alt="Axisphere Logo"
+                className="h-14 w-auto"
+              />
             </Link>
             <p className="text-sm opacity-80">
               Performance marketing and lead generation for USA{" "}
