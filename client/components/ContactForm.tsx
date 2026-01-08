@@ -67,18 +67,52 @@ export default function ContactForm({
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      await new Promise((resolve) => setTimeout(resolve, 800));
+      // Prepare the data object
+      const submitData: Record<string, string | undefined> = {
+        inquiry_type: type,
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      };
 
-      toast.success(
-        isProjectForm
-          ? "Project inquiry sent! We'll be in touch soon."
-          : isPlanForm
-            ? "Plan request received! We'll create your customized 90-day plan soon."
-            : "Call scheduled! We'll confirm the time shortly.",
-      );
+      // Add type-specific fields
+      if (isPlanForm) {
+        submitData.company = formData.company;
+        submitData.industry = formData.industry;
+        submitData.budget = formData.budget;
+        submitData.timeline = formData.timeline;
+      } else if (type === "call") {
+        submitData.preferred_date = formData.date;
+        submitData.preferred_time = formData.time;
+      }
 
+      // Submit to Supabase
+      await submitInquiry(submitData as any);
+
+      // Show success alert
+      const successTitle = isProjectForm
+        ? "Project Inquiry Sent!"
+        : isPlanForm
+          ? "Plan Request Received!"
+          : "Call Scheduled!";
+
+      const successMessage = isProjectForm
+        ? "We'll review your project details and get back to you soon."
+        : isPlanForm
+          ? "We'll create your customized 90-day lead generation plan and contact you shortly."
+          : "We'll confirm your preferred date and time shortly.";
+
+      await Swal.fire({
+        icon: "success",
+        title: successTitle,
+        text: successMessage,
+        confirmButtonText: "Great!",
+        confirmButtonColor: "#22c55e",
+      });
+
+      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -93,7 +127,16 @@ export default function ContactForm({
       });
       onOpenChange(false);
     } catch (error) {
-      toast.error("Something went wrong. Please try again.");
+      const errorMessage =
+        error instanceof Error ? error.message : "Something went wrong";
+
+      await Swal.fire({
+        icon: "error",
+        title: "Submission Failed",
+        text: errorMessage || "Please try again later.",
+        confirmButtonText: "Try Again",
+        confirmButtonColor: "#ef4444",
+      });
     } finally {
       setIsSubmitting(false);
     }
