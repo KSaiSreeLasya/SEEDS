@@ -152,18 +152,18 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="mb-6">
-            <p className="text-sm opacity-90 mb-2">
+            <p className="text-sm opacity-100 mb-2">
               <span className="font-semibold">Contact:</span>{" "}
               hello@axisphere.media | +1 (US Number) |{" "}
               <a
                 href="#contact"
-                className="hover:opacity-100 transition-opacity font-medium"
+                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
               >
                 Schedule a Call
               </a>
             </p>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-80">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-100">
             <p>© {currentYear} Axisphere. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <a
