@@ -14,10 +14,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-secondary/30 rounded-lg flex items-center justify-center">
-                <span className="font-heading font-bold text-lg">A</span>
-              </div>
-              <span className="font-heading font-bold text-xl">Axisphere</span>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F4fd56084edeb4b5e849c2c5dd9a552d1?format=webp&width=800"
+                alt="Axisphere Logo"
+                className="h-14 w-auto"
+              />
             </Link>
             <p className="text-sm opacity-80">
               Performance marketing and lead generation for USA{" "}
@@ -26,16 +27,16 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Product */}
+          {/* Links */}
           <div>
             <h3 className="font-heading font-semibold text-sm uppercase tracking-wider mb-4">
-              Product
+              Links
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   to="/"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Home
                 </Link>
@@ -43,7 +44,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Services
                 </a>
@@ -51,17 +52,25 @@ export default function Footer() {
               <li>
                 <a
                   href="#solutions"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
-                  90-Day Program
+                  Solutions
                 </a>
               </li>
               <li>
                 <a
-                  href="#solutions"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  href="#contact"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
-                  Solutions
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
+                >
+                  About
                 </a>
               </li>
             </ul>
@@ -75,34 +84,32 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="#"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
-                  Blog & Insights
+                  LinkedIn
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
-                  Case Studies
+                  Instagram
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
-                  Guides & Playbooks
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
-                >
-                  Support
+                  Twitter
                 </a>
               </li>
             </ul>
@@ -115,25 +122,25 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
-                  href="#"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                <Link
+                  to="/privacy-policy"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                <Link
+                  to="/terms-conditions"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
-                  Terms of Service
-                </a>
+                  Terms & Conditions
+                </Link>
               </li>
               <li>
                 <a
                   href="#"
-                  className="opacity-80 hover:opacity-100 transition-opacity"
+                  className="opacity-100 hover:opacity-80 transition-opacity"
                 >
                   Cookie Policy
                 </a>
@@ -145,35 +152,41 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="mb-6">
-            <p className="text-sm opacity-90 mb-2">
+            <p className="text-sm opacity-100 mb-2">
               <span className="font-semibold">Contact:</span>{" "}
               hello@axisphere.media | +1 (US Number) |{" "}
               <a
                 href="#contact"
-                className="hover:opacity-100 transition-opacity font-medium"
+                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
               >
                 Schedule a Call
               </a>
             </p>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-80">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm opacity-100">
             <p>© {currentYear} Axisphere. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <a
-                href="#"
-                className="hover:opacity-100 transition-opacity font-medium"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
               >
                 Twitter
               </a>
               <a
-                href="#"
-                className="hover:opacity-100 transition-opacity font-medium"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
               >
                 LinkedIn
               </a>
               <a
-                href="#"
-                className="hover:opacity-100 transition-opacity font-medium"
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="opacity-100 hover:opacity-80 transition-opacity font-medium"
               >
                 GitHub
               </a>
