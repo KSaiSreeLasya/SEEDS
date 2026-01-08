@@ -95,6 +95,8 @@ export default function TermsConditions() {
           </section>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
