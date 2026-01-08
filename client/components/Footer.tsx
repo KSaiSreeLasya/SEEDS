@@ -167,19 +167,25 @@ export default function Footer() {
             <p>© {currentYear} Axisphere. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <a
-                href="#"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:opacity-100 transition-opacity font-medium"
               >
                 Twitter
               </a>
               <a
-                href="#"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:opacity-100 transition-opacity font-medium"
               >
                 LinkedIn
               </a>
               <a
-                href="#"
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:opacity-100 transition-opacity font-medium"
               >
                 GitHub
