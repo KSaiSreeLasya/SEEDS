@@ -235,10 +235,10 @@ export default function ContactForm({
                     className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                   >
                     <option value="">Select budget</option>
-                    <option value="5k-10k">$5K - $10K</option>
-                    <option value="10k-25k">$10K - $25K</option>
-                    <option value="25k-50k">$25K - $50K</option>
-                    <option value="50k+">$50K+</option>
+                    <option value="4l-8l">₹4L - ₹8L</option>
+                    <option value="8l-21l">₹8L - ₹21L</option>
+                    <option value="21l-42l">₹21L - ₹42L</option>
+                    <option value="42l+">₹42L+</option>
                   </select>
                 </div>
                 <div className="space-y-2">
