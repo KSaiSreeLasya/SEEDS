@@ -152,10 +152,29 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-primary-foreground/20 pt-8">
-          <div className="mb-6">
-            <p className="text-sm opacity-100 mb-2">
-              <span className="font-semibold">Contact:</span>{" "}
-              hello@axisphere.media | +1 (US Number) |{" "}
+          <div className="mb-6 space-y-2">
+            <p className="text-sm opacity-100">
+              <span className="font-semibold">Contact:</span> hello@axisphere.media
+            </p>
+            <p className="text-sm opacity-100">
+              <span className="font-semibold">USA:</span>{" "}
+              <a
+                href="tel:16095361441"
+                className="text-black hover:text-black/80 transition-colors"
+              >
+                +1 (609) 536-1441
+              </a>
+            </p>
+            <p className="text-sm opacity-100">
+              <span className="font-semibold">UK:</span>{" "}
+              <a
+                href="tel:+441134036718"
+                className="text-black hover:text-black/80 transition-colors"
+              >
+                +44 (113) 403-6718
+              </a>
+            </p>
+            <p className="text-sm">
               <a
                 href="#contact"
                 className="text-black hover:text-black/80 transition-colors"
