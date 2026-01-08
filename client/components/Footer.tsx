@@ -36,7 +36,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="opacity-100 hover:opacity-80 transition-opacity"
+                  className="text-black hover:text-black/80 transition-colors"
                 >
                   Home
                 </Link>
