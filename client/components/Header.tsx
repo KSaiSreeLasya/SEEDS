@@ -21,7 +21,7 @@ export default function Header() {
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F4fd56084edeb4b5e849c2c5dd9a552d1?format=webp&width=800"
               alt="Axisphere Logo"
-              className="h-10 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 
