@@ -10,7 +10,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { toast } from "sonner";
+import Swal from "sweetalert2";
+import { submitInquiry } from "@/lib/supabase";
 
 interface ContactFormProps {
   isOpen: boolean;
