@@ -102,16 +102,16 @@ export default function About() {
             {valuePillars.map((pillar, index) => (
               <div
                 key={index}
-                className="p-6 bg-primary-foreground/10 rounded-2xl border border-primary-foreground/20 shadow-md hover:shadow-lg hover:bg-primary-foreground/20 transition-all duration-300 animate-slide-up"
+                className="p-6 bg-white rounded-2xl border border-border shadow-md hover:shadow-lg hover:bg-muted transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-12 h-12 flex items-center justify-center bg-secondary/20 rounded-xl text-2xl mb-3">
                   {pillar.icon}
                 </div>
-                <h3 className="text-lg font-heading font-semibold text-primary-foreground mb-2">
+                <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
                   {pillar.title}
                 </h3>
-                <p className="text-primary-foreground/80 text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   {pillar.description}
                 </p>
               </div>
