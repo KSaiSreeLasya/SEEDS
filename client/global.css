@@ -18,8 +18,8 @@
     --orange-accent: 24 91% 67%;
     --white: 0 0% 100%;
 
-    /* Semantic Colors - Purple, Lavender, Orange Theme with White Background */
-    --background: 0 0% 100%;
+    /* Semantic Colors - Purple, Lavender, Orange Theme with Lavender Background */
+    --background: 270 57% 92%;
     --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
@@ -34,7 +34,7 @@
     --secondary: 267 56% 93%;
     --secondary-foreground: 265 34% 44%;
 
-    --muted: 0 0% 96%;
+    --muted: 270 40% 85%;
     --muted-foreground: 0 0% 40%;
 
     --accent: 24 91% 67%;
@@ -43,7 +43,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 267 30% 92%;
+    --border: 270 45% 85%;
     --input: 0 0% 97%;
     --ring: 265 34% 44%;
 
