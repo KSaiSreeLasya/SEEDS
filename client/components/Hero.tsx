@@ -132,7 +132,7 @@ export default function Hero() {
 
                   {/* Label */}
                   <div className="text-center">
-                    <p className="font-heading font-bold text-2xl text-accent-foreground">
+                    <p className="font-heading font-bold text-2xl text-[#ded0f6]">
                       Lead Growth Engine
                     </p>
                     <p className="opacity-70 mt-2 text-sm">
