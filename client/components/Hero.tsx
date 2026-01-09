@@ -15,7 +15,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="bg-background text-foreground py-16 md:py-24 lg:py-32 overflow-hidden">
+    <section className="bg-primary text-primary-foreground py-16 md:py-24 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
