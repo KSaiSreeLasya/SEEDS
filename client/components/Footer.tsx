@@ -36,7 +36,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   Home
                 </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   Services
                 </a>
@@ -52,7 +52,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#solutions"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   Solutions
                 </a>
@@ -61,7 +61,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#about"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   About
                 </a>
@@ -69,7 +69,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   Contact
                 </a>
@@ -88,7 +88,7 @@ export default function Footer() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   LinkedIn
                 </a>
@@ -98,7 +98,7 @@ export default function Footer() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   Instagram
                 </a>
@@ -108,7 +108,7 @@ export default function Footer() {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   Twitter
                 </a>
@@ -125,7 +125,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/privacy-policy"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -133,7 +133,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/terms-conditions"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   Terms & Conditions
                 </Link>
@@ -141,7 +141,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-black hover:text-black/80 transition-colors"
+                  className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
                 >
                   Cookie Policy
                 </a>
@@ -161,7 +161,7 @@ export default function Footer() {
               <span className="font-semibold">USA:</span>{" "}
               <a
                 href="tel:16095361441"
-                className="text-black hover:text-black/80 transition-colors"
+                className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
               >
                 +1 (609) 536-1441
               </a>
@@ -170,7 +170,7 @@ export default function Footer() {
               <span className="font-semibold">UK:</span>{" "}
               <a
                 href="tel:+441134036718"
-                className="text-black hover:text-black/80 transition-colors"
+                className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
               >
                 +44 (113) 403-6718
               </a>
@@ -178,7 +178,7 @@ export default function Footer() {
             <p className="text-sm">
               <a
                 href="#contact"
-                className="text-black hover:text-black/80 transition-colors"
+                className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
               >
                 Schedule a Call
               </a>
@@ -191,7 +191,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black hover:text-black/80 transition-colors"
+                className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
               >
                 Twitter
               </a>
@@ -199,7 +199,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black hover:text-black/80 transition-colors"
+                className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
               >
                 LinkedIn
               </a>
@@ -207,7 +207,7 @@ export default function Footer() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black hover:text-black/80 transition-colors"
+                className="text-[#ded0f6] hover:text-[#ded0f6]/80 transition-colors"
               >
                 GitHub
               </a>
