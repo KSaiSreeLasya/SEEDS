@@ -151,7 +151,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-primary-foreground/20 pt-8">
+        <div className="border-t border-border pt-8">
           <div className="mb-6 space-y-2">
             <p className="text-sm opacity-100">
               <span className="font-semibold">Contact:</span>{" "}
