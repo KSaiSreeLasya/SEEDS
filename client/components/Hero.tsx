@@ -21,10 +21,10 @@ export default function Hero() {
           {/* Content */}
           <div className="space-y-6 animate-slide-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full shadow-lg hover:shadow-xl transition-shadow">
-              <span className="text-accent-foreground font-semibold text-sm">
+              <span className="text-white font-semibold text-sm">
                 ✨ New
               </span>
-              <span className="text-white-foreground text-sm font-medium">
+              <span className="text-white text-sm font-medium">
                 90-Day Acquisition Program
               </span>
             </div>
