@@ -47,7 +47,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-primary via-primary to-primary/80 text-primary-foreground relative overflow-hidden"
+      className="py-16 md:py-24 lg:py-32 bg-background text-foreground relative overflow-hidden"
     >
       {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
