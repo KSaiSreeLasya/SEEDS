@@ -85,7 +85,7 @@ export default function About() {
                   className="animate-slide-up p-4 rounded-lg bg-accent/5 border border-accent/20"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <p className="font-heading font-bold text-3xl text-accent-foreground mb-1">
+                  <p className="font-heading font-bold text-3xl text-[#ded0f6] mb-1">
                     {stat.number}
                   </p>
                   <p className="font-semibold text-lg opacity-90 mb-1">

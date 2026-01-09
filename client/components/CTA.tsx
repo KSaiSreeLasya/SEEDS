@@ -48,7 +48,7 @@ export default function CTA() {
                 </button>
                 <button
                   onClick={() => setOpenForm("call")}
-                  className="px-8 py-4 border-2 border-accent-foreground bg-transparent text-accent-foreground font-heading font-bold rounded-lg hover:bg-accent-foreground hover:text-white hover:shadow-lg transition-all text-lg"
+                  className="px-8 py-4 bg-accent-foreground text-white font-heading font-bold rounded-lg hover:opacity-90 shadow-lg hover:shadow-xl transition-all text-lg"
                 >
                   Schedule a Discovery Call
                 </button>
@@ -64,7 +64,7 @@ export default function CTA() {
           <div className="mt-16 pt-16 border-t border-border">
             <div className="text-center mb-12 animate-slide-up">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full border border-secondary/20 mb-4">
-                <span className="text-secondary font-semibold text-sm">
+                <span className="text-secondary-foreground font-semibold text-sm">
                   ⭐ Trusted
                 </span>
               </div>
