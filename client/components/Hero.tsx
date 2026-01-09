@@ -63,7 +63,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-8 pt-6 text-sm opacity-90">
               <div className="flex-1 p-4 rounded-lg bg-accent/5 border border-accent/20">
-                <p className="font-heading font-bold text-lg text-accent-foreground">
+                <p className="font-heading font-bold text-lg text-[#ded0f6]">
                   150+
                 </p>
                 <p className="whitespace-nowrap">
@@ -74,13 +74,13 @@ export default function Hero() {
                 </p>
               </div>
               <div className="flex-1 p-4 rounded-lg bg-accent/5 border border-accent/20">
-                <p className="font-heading font-bold text-lg text-accent-foreground">
+                <p className="font-heading font-bold text-lg text-[#ded0f6]">
                   98%
                 </p>
                 <p>Active Client Retention</p>
               </div>
               <div className="flex-1 p-4 rounded-lg bg-accent/5 border border-accent/20">
-                <p className="font-heading font-bold text-lg text-accent-foreground">
+                <p className="font-heading font-bold text-lg text-[#ded0f6]">
                   2,000+
                 </p>
                 <p>Leads Generated Monthly</p>
