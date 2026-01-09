@@ -21,10 +21,10 @@ export default function Hero() {
           {/* Content */}
           <div className="space-y-6 animate-slide-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full shadow-lg hover:shadow-xl transition-shadow">
-              <span className="text-[#ded0f6] font-semibold text-sm">
+              <span className="text-accent-foreground font-semibold text-sm">
                 ✨ New
               </span>
-              <span className="text-[#ded0f6] text-sm font-medium">
+              <span className="text-white-foreground text-sm font-medium">
                 90-Day Acquisition Program
               </span>
             </div>
@@ -132,7 +132,7 @@ export default function Hero() {
 
                   {/* Label */}
                   <div className="text-center">
-                    <p className="font-heading font-bold text-2xl text-[#ded0f6]">
+                    <p className="font-heading font-bold text-2xl text-accent-foreground">
                       Lead Growth Engine
                     </p>
                     <p className="opacity-70 mt-2 text-sm">
