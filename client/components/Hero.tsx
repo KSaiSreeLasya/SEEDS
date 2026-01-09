@@ -55,7 +55,7 @@ export default function Hero() {
               </button>
               <button
                 onClick={handleSpecialist}
-                className="px-8 py-3 border-2 border-accent-foreground text-accent-foreground font-heading font-semibold rounded-lg hover:bg-accent-foreground hover:text-white hover:shadow-lg transition-all text-center"
+                className="px-8 py-3 bg-accent-foreground text-white font-heading font-semibold rounded-lg hover:opacity-90 shadow-lg hover:shadow-xl transition-all text-center"
               >
                 Talk to a Specialist
               </button>
