@@ -64,7 +64,7 @@ export default function CTA() {
           <div className="mt-16 pt-16 border-t border-border">
             <div className="text-center mb-12 animate-slide-up">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full border border-secondary/20 mb-4">
-                <span className="text-secondary font-semibold text-sm">
+                <span className="text-secondary-foreground font-semibold text-sm">
                   ⭐ Trusted
                 </span>
               </div>
