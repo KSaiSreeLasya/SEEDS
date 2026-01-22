@@ -113,7 +113,7 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="group p-8 bg-gradient-to-br from-card to-card/50 rounded-2xl shadow-md hover:shadow-2xl hover:border-accent-foreground/50 hover:from-card hover:to-accent/10 transition-all duration-300 border border-border animate-slide-up"
+                className="group p-8 bg-card rounded-2xl shadow-lg hover:shadow-2xl hover:border-accent hover:from-card hover:to-accent/10 transition-all duration-300 border-2 border-border/60 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-secondary/20 to-accent/20 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300">
