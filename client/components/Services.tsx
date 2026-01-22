@@ -93,7 +93,7 @@ export default function Services() {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24 animate-slide-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full border border-secondary/20 mb-4">
-            <span className="text-secondary font-semibold text-sm">
+            <span className="text-secondary-foreground font-bold text-sm tracking-wide">
               ✨ Solutions
             </span>
           </div>
