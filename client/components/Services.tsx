@@ -85,7 +85,10 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24 lg:py-32 bg-muted">
+    <section
+      id="services"
+      className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-muted/30 to-background"
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24 animate-slide-up">
@@ -113,7 +116,7 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="group p-8 bg-gradient-to-br from-card to-card/50 rounded-2xl shadow-md hover:shadow-2xl hover:border-accent-foreground/50 hover:from-card hover:to-accent/10 transition-all duration-300 border border-border animate-slide-up"
+                className="group p-8 bg-card rounded-2xl shadow-lg hover:shadow-2xl hover:border-accent hover:from-card hover:to-accent/10 transition-all duration-300 border-2 border-border/60 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-secondary/20 to-accent/20 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300">
