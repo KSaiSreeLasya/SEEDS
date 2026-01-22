@@ -77,15 +77,24 @@ export default function CTA() {
                 Success
               </h3>
               <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-                Join market leaders who've transformed their lead generation strategy
+                Join market leaders who've transformed their lead generation
+                strategy
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {[
-                { name: "Real Estate Partner 1", icon: "🏢", type: "Enterprise" },
+                {
+                  name: "Real Estate Partner 1",
+                  icon: "🏢",
+                  type: "Enterprise",
+                },
                 { name: "Fintech SaaS 1", icon: "💳", type: "Platform" },
-                { name: "Real Estate Developer 1", icon: "🏗️", type: "Developer" },
+                {
+                  name: "Real Estate Developer 1",
+                  icon: "🏗️",
+                  type: "Developer",
+                },
                 { name: "Fintech Platform 1", icon: "📊", type: "Analytics" },
               ].map((company, index) => (
                 <div
@@ -126,11 +135,17 @@ export default function CTA() {
                 { stat: "500M+", label: "Leads Generated" },
                 { stat: "95%", label: "Success Rate" },
               ].map((item, index) => (
-                <div key={index} className="text-center animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div
+                  key={index}
+                  className="text-center animate-slide-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
                   <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-2">
                     {item.stat}
                   </div>
-                  <p className="text-muted-foreground text-sm md:text-base">{item.label}</p>
+                  <p className="text-muted-foreground text-sm md:text-base">
+                    {item.label}
+                  </p>
                 </div>
               ))}
             </div>
